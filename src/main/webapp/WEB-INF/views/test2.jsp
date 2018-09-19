@@ -44,11 +44,13 @@
 		width:100%;
 	}
 	.mainInfo{
-		width:33%;
-		height:300px;
+		width:350px;
+		height:230px;
 		background: green;
-		border:1px solid black;
 		float:left;
+	}
+	.mainInfo:nth-child(2){
+		margin:0 25px;
 	}
 	.content02{
 		width:700px;

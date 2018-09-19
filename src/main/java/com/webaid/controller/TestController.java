@@ -26,4 +26,10 @@ public class TestController {
 		return "test2";
 	}
 	
+	@RequestMapping(value="/test3", method=RequestMethod.GET)
+	public String test3(){
+		logger.info("test3");
+		return "test3";
+	}
+	
 }
