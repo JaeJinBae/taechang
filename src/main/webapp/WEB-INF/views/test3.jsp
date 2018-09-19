@@ -120,7 +120,11 @@
 		background:#033c60;
 	}
 	#section3{
-		
+		padding:50px 0;
+	}
+	.contentWrap3{
+		width:1100px;
+		margin:0 auto;
 	}
 	.mapWrap{
 		width:100%;
@@ -192,6 +196,9 @@
 		</div>
 	</section><!-- section2 end -->
 	<section id="section3">
+		<div class="contentWrap3">
+			<h2>오시는 길 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#none">더보기+</a></h2>
+		</div>
 		<div class="mapWrap">
 		
 		</div>
