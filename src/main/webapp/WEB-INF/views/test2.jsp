@@ -89,7 +89,7 @@
 				</div>
 				<div class="mainInfo">
 					
-				</div>
+				</div> 
 				<div class="mainInfo">
 					
 				</div>
