@@ -135,7 +135,7 @@
 </head>
 <body>
 	<header>
-		
+		<jsp:include page="../include/pcHeader.jsp"></jsp:include>
 	</header>
 	<div class="mainSlider">
 			
