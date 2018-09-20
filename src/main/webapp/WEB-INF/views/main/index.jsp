@@ -18,9 +18,11 @@
 	header{
 		width:100%;
 		min-width:1100px;
-		height:100px;
-		background: yellow;
+		height:115px;
 		border-bottom:1px solid black;
+		position: relative;
+		z-index: 99;
+		background: yellow;
 	}
 	section{
 		width:100%;
@@ -34,8 +36,9 @@
 	}
 	.mainSlider{
 		width:100%;
+		min-width:1100px;
 		height:600px;
-		background: #033c60;
+		background: skyblue;
 	}
 	#section1{
 		padding:50px 0;

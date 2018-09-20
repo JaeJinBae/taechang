@@ -34,6 +34,7 @@
 	}
 	.mainSlider{
 		width:100%;
+		min-width:1100px;
 		height:600px;
 		background: #033c60;
 	}
