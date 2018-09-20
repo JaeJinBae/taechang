@@ -48,8 +48,8 @@
 	}
 	.displayBlock{
 		display:block;
-		transition-property:display;
-		transition-duration:0.5s;
+		transition-property:all;
+		transition-duration:1s;
 	}
 	.subMenuContentWrap{
 		width:1100px;

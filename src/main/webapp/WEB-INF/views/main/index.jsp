@@ -19,8 +19,7 @@
 		width:100%;
 		min-width:1100px;
 		height:115px;
-		border-bottom:1px solid black;
-		position: relative;
+		position: relative; 
 		z-index: 99;
 		background: yellow;
 	}
