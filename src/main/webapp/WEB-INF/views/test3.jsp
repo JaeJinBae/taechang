@@ -18,9 +18,10 @@
 	header{
 		width:100%;
 		min-width:1100px;
-		height:100px;
+		height:115px;
+		position: relative; 
+		z-index: 99;
 		background: yellow;
-		border-bottom:1px solid black;
 	}
 	section{
 		width:100%;
@@ -36,7 +37,7 @@
 		width:100%;
 		min-width:1100px;
 		height:600px;
-		background: #033c60;
+		background: skyblue;
 	}
 	#section1{
 		padding:50px 0;
@@ -136,7 +137,7 @@
 </head>
 <body>
 	<header>
-		
+		<jsp:include page="include/pcHeaderTest.jsp"></jsp:include>
 	</header>
 	<div class="mainSlider">
 			
