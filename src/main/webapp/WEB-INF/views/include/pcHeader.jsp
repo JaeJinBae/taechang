@@ -158,7 +158,7 @@
 				</div><!-- subMenuCallInfo -->
 				<div class="subMenuUlWrap">
 					<ul class="subMenuUl">
-						<li><a href="">인사말</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu01_1">인사말</a></li>
 						<li><a href="">운영방침</a></li>
 						<li><a href="">오시는 길</a></li>
 					</ul>
