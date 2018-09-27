@@ -147,7 +147,7 @@
 		height:115px;
 		position: relative; 
 		z-index: 99;
-		background: yellow;
+		/* background: yellow; */
 	}
 	section{
 		width:100%;
@@ -162,8 +162,14 @@
 	.mainSlider{
 		width:100%;
 		min-width:1100px;
-		height:600px;
-		background: skyblue;
+		/* height:600px;
+		background: skyblue; */
+	}
+	/* .mainSlider > img{
+		width:100%;
+	} */
+	.mainBanner{
+		width:100%;
 	}
 	#section1{
 		padding:50px 0;
@@ -262,13 +268,31 @@
 }
 
 </style>
+<script type="text/javascript">
+	$(function(){
+		$(".mainBanner").slick({
+			arrows:false,
+			infinite:true,
+			speed:500,
+			fade:true,
+			cssEase:'linear',
+			autoplay:true,
+			autoplaySpeed:4000,
+			dots:true,
+		});	
+	});
+</script>
 </head>
 <body>
 	<header>
 		<jsp:include page="../include/pcHeader.jsp"></jsp:include>
 	</header>
 	<div class="mainSlider">
-			
+		<div class="mainBanner">
+			<div><img src="${pageContext.request.contextPath}/resources/images/mainSlider1.png" alt="태창법무사사무소"></div>
+			<div><img src="${pageContext.request.contextPath}/resources/images/mainSlider2.png" alt="태창법무사사무소"></div>
+			<div><img src="${pageContext.request.contextPath}/resources/images/mainSlider3.png" alt="태창법무사사무소"></div>
+		</div>
 	</div>
 	<section id="section1">
 		<div class="contentWrap1">
