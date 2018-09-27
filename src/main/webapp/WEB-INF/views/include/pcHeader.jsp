@@ -1,6 +1,107 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <style>
+@media only screen and (min-width:767px) and (max-width:1099px){
+	.headerWrap{
+		width:100%;
+	}
+	.mainMenuWrap{
+		width:767px;
+		height:95px;
+		margin:0 auto;
+		overflow:hidden;
+	}
+	.mainLogo{
+		width:250px;
+		float:left;
+		margin-top:17px;
+		margin-left:10px;
+	}
+	.mainLogo > a{
+		width:100%;
+	}
+	.mainLogo > a > img{
+		width:100%;
+	}
+	.mainMenuUl{
+		width:465px;
+		float:right;
+		overflow:hidden;
+		text-align: right;
+		margin-right:15px;
+	}
+	.mainMenuUl > li{
+		float:left;
+		width:93px;
+		height:95px;
+		text-align: center;
+		padding-top:38px;
+	}
+	.mainMenuUl > li > a{
+		font-size:16px;
+		font-weight:600;
+	}
+	.mainMenuUl > li:hover{
+		border-bottom:4px solid red;
+	} 
+	.subMenuWrap{
+		display:none;
+		width:100%;
+		background: #033c60;
+	}
+	.displayBlock{
+		display:block;
+		transition-property:all;
+		transition-duration:1s;
+	}
+	.subMenuContentWrap{
+		width:767px;
+		margin:0 auto;
+		overflow:hidden;
+		padding:23px 0;
+	} 
+	.subMenuCallInfo{
+		float:left;
+		margin:10px;
+		text-align: center;
+	}
+	.subMenuCallInfo > p{
+		font-size:13px;
+		font-weight:600;
+		color:gray;
+		line-height:25px;
+	}
+	#bigtxt{
+		font-size:17px;
+		font-weight:bold;
+	}
+	.subMenuCallInfo > p:nth-child(2){
+		margin-bottom:10px;
+	}
+	.subMenuCallInfo > h1{
+		font-weight: bold;
+		color:#ff6d00;
+		font-size:25px;
+	}
+	.subMenuUlWrap{
+		float:right;
+		margin-right:15px;
+	}
+	.subMenuUl{
+		float:left;
+		width:93px;
+		text-align: center;
+	}
+	.subMenuUl > li{
+		/* padding:15px 0; */
+		padding-bottom:25px;
+	}
+	.subMenuUl > li > a{
+		font-size:14px;
+		color:#e1e1e1;
+	}
+}
+@media only screen and (min-width:1100px){
 	.headerWrap{
 		width:100%;
 	}
@@ -95,6 +196,7 @@
 		font-size:17px;
 		color:#e1e1e1;
 	}
+}
 </style>
 <script>
 	$(function(){

@@ -15,6 +15,132 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+@media only screen and (min-width:767px) and (max-width:1099px){
+	header{
+		width:100%;
+		min-width:767px;
+		height:95px;
+		position: relative; 
+		z-index: 99;
+		background: yellow;
+	}
+	/* section, footer{
+		display:none;
+	} */
+	section{
+		width:100%;
+		min-width:767px;
+	}
+	footer{
+		width:100%;
+		min-width:767px;
+		height:100px;
+		background: black;
+	}
+	.mainSlider{
+		width:100%;
+		min-width:767px;
+		height:418px;
+		background: skyblue;
+	}
+	#section1{
+		padding:50px 0;
+		padding-top:25px;
+	}
+	.contentWrap1{
+		width:767px;
+		margin:0 auto;
+		overflow:hidden;
+	}
+	.content01{
+		width:100%;
+	}
+	.smallTitle{
+		width:100%;
+		margin:20px 0;
+	}
+	.smallTitle > h2{
+		font-weight:600;
+		display:inline-block;
+		font-size:27px;
+		margin-left:5px;
+	}
+	.smallTitle > p{
+		display:inline-block;
+		font-size:17px;
+		color:#a9a9a9;
+		margin-left:15px;
+		font-weight:600;
+	}
+	.boxWrap{
+		width:100%;
+		overflow:hidden;
+	}
+	.mainInfo{
+		width:250px;
+		height:164px;
+		background: green;
+		float:left;
+	}
+	.mainInfo:nth-child(2){
+		margin:0 8px;
+	}
+	#section2{
+		background:#f5f5f5;
+		padding:50px 0;
+	}
+	.contentWrap2{
+		width:767px;
+		margin:0 auto;
+		overflow:hidden;
+	}
+	.contentBox{
+		float:left;
+	}
+	.contentBox1{
+		width:188px;
+		height:215px;
+		background: red;
+	}
+	.contentBox2{
+		width:388px;
+		height:215px;
+		background:blue;
+	}
+	.contentBox3{
+		width:188px;
+		height:215px;
+		background:green;
+	}
+	.contentBox4{
+		width:33.33%;
+		height:153px;
+		background:pink;
+	}
+	.contentBox5{
+		width:33.33%;
+		height:153px;
+		background:yellow;
+	}
+	.contentBox6{
+		width:33.33%;
+		height:153px;
+		background:#033c60;
+	}
+	#section3{
+		padding:50px 0;
+	}
+	.contentWrap3{
+		width:767px;
+		margin:0 auto;
+	}
+	.mapWrap{
+		width:100%;
+		height:300px;
+		background: #123456;
+	}
+}
+@media only screen and (min-width:1100px){
 	header{
 		width:100%;
 		min-width:1100px;
@@ -133,6 +259,8 @@
 		height:300px;
 		background: #123456;
 	}
+}
+
 </style>
 </head>
 <body>
