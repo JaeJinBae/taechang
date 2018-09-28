@@ -15,6 +15,50 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+@media only screen and (min-width:320px) and (max-width:766px){
+	body{
+		position: relative;
+	}
+	header{
+		width:100%;
+		position:fixed;
+		z-index: 99;		
+	}
+	section{
+		padding:15px 3px;
+		width:100%;
+	}
+	footer{
+		width:100%;
+		min-width:320px;
+		height:100px; 
+		background: black;
+	}
+	.mainSlider{
+		width:100%;
+		min-width:320px;
+		padding-top:64px;
+	}
+	.mainBanner{
+		width:100%;
+	}
+	.mainBanner div img{
+		width:100%;
+	}
+	.slick-dots{
+		bottom:0;
+	}
+	.slick-dots li button:before{
+		font-size:12px;
+	}
+	#section1{
+		
+	}
+	.smallTitle > h2{
+		font-size:27px;
+		font-weight: bold;
+	}
+}
 @media only screen and (min-width:767px) and (max-width:1099px){
 	header{
 		width:100%;
@@ -22,11 +66,7 @@
 		height:95px;
 		position: relative; 
 		z-index: 99;
-		background: yellow;
 	}
-	/* section, footer{
-		display:none;
-	} */
 	section{
 		width:100%;
 		min-width:767px;
@@ -40,8 +80,13 @@
 	.mainSlider{
 		width:100%;
 		min-width:767px;
-		height:418px;
 		background: skyblue;
+	}
+	.mainBanner{
+		width:100%;
+	}
+	.mainBanner div img{
+		width:100%;
 	}
 	#section1{
 		padding:50px 0;
@@ -147,7 +192,6 @@
 		height:115px;
 		position: relative; 
 		z-index: 99;
-		/* background: yellow; */
 	}
 	section{
 		width:100%;
@@ -162,13 +206,11 @@
 	.mainSlider{
 		width:100%;
 		min-width:1100px;
-		/* height:600px;
-		background: skyblue; */
 	}
-	/* .mainSlider > img{
-		width:100%;
-	} */
 	.mainBanner{
+		width:100%;
+	}
+	.mainBanner div img{
 		width:100%;
 	}
 	#section1{

@@ -1,7 +1,18 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <style>
+@media only screen and (min-width:320px) and (max-width:766px){
+	.headerWrap{
+		display:none;
+	}
+	.mHeaderWrap{
+		width:100%;
+	}
+}
 @media only screen and (min-width:767px) and (max-width:1099px){
+	.mHeaderWrap{
+		display:none;
+	}
 	.headerWrap{
 		width:100%;
 	}
@@ -102,6 +113,9 @@
 	}
 }
 @media only screen and (min-width:1100px){
+	.mHeaderWrap{
+		display:none;
+	}
 	.headerWrap{
 		width:100%;
 	}
@@ -287,4 +301,7 @@
 			</div><!-- subMenuContentWrap -->
 		</div><!-- subMenuWrap -->
 	</div><!-- headerWrap end -->
+	<div class="mHeaderWrap">
+		<jsp:include page="mHeader.jsp"></jsp:include>
+	</div>
 </body>
