@@ -13,6 +13,7 @@
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick-theme.css?ver=0"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/resources/slick/slick.min.js"></script>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=LTB96xNxL2gd5pnixyId&submodules=geocoder"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 @media only screen and (min-width:320px) and (max-width:766px){
@@ -21,6 +22,7 @@
 	}
 	header{
 		width:100%;
+		background:#fff;
 		position:fixed;
 		z-index: 99;		
 	}
@@ -54,10 +56,59 @@
 	#section1{
 		
 	}
+	.smallTitle{
+		padding:10px 0;
+	}
 	.smallTitle > h2{
-		font-size:27px;
+		font-size:20px;
 		font-weight: bold;
 	}
+	.boxWrap{
+		width:100%;
+	}
+	.mainInfo{ 
+		width:350px;
+		margin: 0 auto;
+		height:230px;
+		background: green;
+		border:1px solid black;
+	}
+	#section2{
+		width:100%;
+	}
+	.contentWrap2{
+		width:100%;
+	}
+	.contentBox{
+		display:none;
+	}
+	.contentBox3{
+		display:block;
+		width:300px;
+		height:350px;
+		margin:0 auto;
+		background: red;
+	}
+	#section3{
+		width:100%;
+	}
+	.contentWrap3{
+		width:100%;
+		overflow:hidden;
+	}
+	.txt1{
+		float:left;
+	}
+	.txt2{
+		float:left;
+		margin-left: 10px;
+	}
+	.mapWrap{
+		width:100%;
+		height:200px;
+		background: blue;
+	}
+	
 }
 @media only screen and (min-width:767px) and (max-width:1099px){
 	header{
@@ -304,8 +355,12 @@
 	}
 	.mapWrap{
 		width:100%;
-		height:300px;
+		height:400px;
 		background: #123456;
+	}
+	#map{
+		width:100%;
+		height:400px;
 	}
 }
 
@@ -394,12 +449,27 @@
 	<section id="section3">
 		<div class="contentWrap3">
 			<div class="smallTitle">
-				<h2>오시는 길</h2>
-				<p><a href="#none">더보기+</a></p>
+				<h2 class="txt1">오시는 길</h2>
+				<p class="txt2"><a href="#none">더보기+</a></p>
 			</div>
 		</div>
 		<div class="mapWrap">
-		
+			<div id="map"></div>
+	
+				<script> 
+					var mapOptions = {
+					    center: new naver.maps.LatLng(35.862259, 128.626323),
+					    zoom: 13
+					};
+					 
+					var map = new naver.maps.Map('map', mapOptions);
+					
+					var marker = new naver.maps.Marker({
+					    position: new naver.maps.LatLng(35.862259, 128.626323),
+					    map: map
+					});
+					
+				</script>
 		</div>
 	</section>
 	<footer>
