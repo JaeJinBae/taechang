@@ -5,7 +5,7 @@
 		width:100%;
 		text-align: center;
 		margin-top:13px;
-		margin-bottom:10px;
+		/* margin-bottom:10px; */
 		padding-bottom:15px;
 		position: relative;
 		border-bottom:1px solid lightgray;
