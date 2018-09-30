@@ -69,9 +69,10 @@
 	.mainInfo{ 
 		width:350px;
 		margin: 0 auto;
-		height:230px;
-		background: green;
-		border:1px solid black;
+		border:1px solid lightgray;
+	}
+	.mainInfo > a, .mainInfo > a > img{
+		width:100%;
 	}
 	#section2{
 		width:100%;
@@ -84,10 +85,11 @@
 	}
 	.contentBox3{
 		display:block;
-		width:300px;
-		height:350px;
+		width:100%;
 		margin:0 auto;
-		background: red;
+	}
+	.section2Content_content > img{
+		width:100%;
 	}
 	#section3{
 		width:100%;
@@ -106,7 +108,10 @@
 	.mapWrap{
 		width:100%;
 		height:200px;
-		background: blue;
+	}
+	#map{
+		width:100%;
+		height:200px;
 	}
 	
 }
@@ -174,12 +179,14 @@
 	}
 	.mainInfo{
 		width:250px;
-		height:164px;
-		background: green;
 		float:left;
+		border:1px solid lightgray;
 	}
 	.mainInfo:nth-child(2){
 		margin:0 8px;
+	}
+	.mainInfo > a, .mainInfo > a > img {
+		width:100%;
 	}
 	#section2{
 		background:#f5f5f5;
@@ -194,19 +201,13 @@
 		float:left;
 	}
 	.contentBox1{
-		width:188px;
-		height:215px;
-		background: red;
+		width:209px;
 	}
 	.contentBox2{
-		width:388px;
-		height:215px;
-		background:blue;
+		width:349px;
 	}
 	.contentBox3{
-		width:188px;
-		height:215px;
-		background:green;
+		width:209px;
 	}
 	.contentBox4{
 		width:33.33%;
@@ -223,6 +224,12 @@
 		height:153px;
 		background:#033c60;
 	}
+	.contentBox4, .contentBox5, .contentBox6{
+		display:none;
+	}
+	.section2Content_content > a, .section2Content_content > a > img, .section2Content_content > img{
+		width:100%;
+	}
 	#section3{
 		padding:50px 0;
 	}
@@ -233,7 +240,10 @@
 	.mapWrap{
 		width:100%;
 		height:300px;
-		background: #123456;
+	}
+	#map{
+		width:100%;
+		height:300px;
 	}
 }
 @media only screen and (min-width:1100px){
@@ -297,12 +307,17 @@
 	}
 	.mainInfo{
 		width:350px;
-		height:230px;
-		background: green;
 		float:left;
+		border:1px solid lightgray;
 	}
 	.mainInfo:nth-child(2){
 		margin:0 25px;
+	}
+	.mainInfo > a{
+		width:100%;
+	}
+	.mainInfo > a > img, .mainInfo > img{
+		width:100%;
 	}
 	#section2{
 		background:#f5f5f5;
@@ -316,6 +331,7 @@
 	.contentBox{
 		float:left;
 	}
+	
 	.contentBox1{
 		width:300px;
 		height:350px;
@@ -346,6 +362,12 @@
 		height:250px;
 		background:#033c60;
 	}
+	.contentBox4, .contentBox5, .contentBox6{
+		display:none;
+	}
+	.section2Content_content > a, .section2Content_content > a > img, .section2Content_content > img{
+		width:100%;
+	}
 	#section3{
 		padding:50px 0;
 	}
@@ -356,7 +378,6 @@
 	.mapWrap{
 		width:100%;
 		height:400px;
-		background: #123456;
 	}
 	#map{
 		width:100%;
@@ -400,13 +421,19 @@
 				</div>
 				<div class="boxWrap">
 					<div class="mainInfo">
-					
+						<a href="${pageContext.request.contextPath}/">
+							<img src="${pageContext.request.contextPath}/resources/images/mainInfoImg1.png">
+						</a>
 					</div>
 					<div class="mainInfo">
-						
+						<a href="${pageContext.request.contextPath}/">
+							<img src="${pageContext.request.contextPath}/resources/images/mainInfoImg2.png">
+						</a>
 					</div> 
 					<div class="mainInfo">
-						
+						<a href="${pageContext.request.contextPath}/">
+							<img src="${pageContext.request.contextPath}/resources/images/mainInfoImg3.png">
+						</a>
 					</div>
 				</div><!-- boxWrap end -->
 			</div><!-- content01 end -->
@@ -416,17 +443,30 @@
 		<div class="contentWrap2">
 			<div class="contentBox1 contentBox">
 				<div class="section2Content_title">
-					<h3>태창 인사말</h3>
+					<!-- <h3>태창 인사말</h3> -->
+				</div>
+				<div class="section2Content_content">
+					<a href="${pageContext.request.contextPath}/">
+						<img src="${pageContext.request.contextPath}/resources/images/mainContentBoxImg1.png">
+					</a>
 				</div>
 			</div>
 			<div class="contentBox2 contentBox">
 				<div class="section2Content_title">
-					<h3>태창 업무방침</h3>
+					<!-- <h3>태창 업무방침</h3> -->
+				</div>
+				<div class="section2Content_content">
+					<a href="${pageContext.request.contextPath}/">
+						<img src="${pageContext.request.contextPath}/resources/images/mainContentBoxImg2.png">
+					</a>
 				</div>
 			</div>
 			<div class="contentBox3 contentBox">
 				<div class="section2Content_title">
-					<h3>고객센터</h3>
+					<!-- <h3>고객센터</h3> -->
+				</div>
+				<div class="section2Content_content">
+					<img src="${pageContext.request.contextPath}/resources/images/mainContentBoxImg3.png">
 				</div>
 			</div>
 			<div class="contentBox4 contentBox">

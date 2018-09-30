@@ -141,7 +141,7 @@
 	});	
 </script>
 <div class="headerWrap2"><!-- mobileMenu.png -->
-	<a class="logo" href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/images/testLogo2.png"></a>
+	<a class="logo" href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/images/logo.png"></a>
 	<p class="menuIcon" onclick="openNav()"><img src="${pageContext.request.contextPath}/resources/images/mobileMenu.png"></p>
 	<div id="mySidenav" class="sidenav">
 		<a class="homeBtn" href="${pageContext.request.contextPath}/">

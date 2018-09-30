@@ -244,7 +244,7 @@
 	<div class="headerWrap">
 		<div class="mainMenuWrap">
 			<div class="mainLogo">
-				<a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/images/testLogo2.png"></a>
+				<a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/images/logo.png"></a>
 			</div>
 			<ul class="mainMenuUl">
 				<li>
