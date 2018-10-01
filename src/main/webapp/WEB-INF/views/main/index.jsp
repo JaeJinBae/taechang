@@ -33,8 +33,8 @@
 	footer{
 		width:100%;
 		min-width:320px;
-		height:100px; 
-		background: black;
+		height:150px; 
+		background: #52575b;
 	}
 	.mainSlider{
 		width:100%;
@@ -46,7 +46,7 @@
 	}
 	.mainBanner div img{
 		width:100%;
-		height:130px;
+		/* height:130px; */
 	}
 	.slick-dots{
 		bottom:0;
@@ -59,6 +59,8 @@
 	}
 	.smallTitle{
 		padding:10px 0;
+		width:350px;
+		margin:0 auto;
 	}
 	.smallTitle > h2{
 		font-size:20px;
@@ -172,8 +174,8 @@
 	footer{
 		width:100%;
 		min-width:767px;
-		height:100px;
-		background: black;
+		height:150px;
+		background: #52575b;
 	}
 	.mainSlider{
 		width:100%;
@@ -341,8 +343,8 @@
 	footer{
 		width:100%;
 		min-width:1100px;
-		height:100px;
-		background: black;
+		height:150px;
+		background: #52575b;
 	}
 	.mainSlider{
 		width:100%;

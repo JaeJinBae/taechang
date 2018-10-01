@@ -33,7 +33,7 @@
 	    z-index: 1; /* Stay on top */
 	    top: 0; /* Stay at the top */
 	    right: 0;
-	    background: #444;
+	    background: #033c60;
 	    overflow-x: hidden; /* Disable horizontal scroll */
 	    padding-top: 40px; /* Place content 60px from the top */
 	    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -155,9 +155,9 @@
 				<p>태창소개 <img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x1.png"></p>
 				<div class="subMenu">
 					<ul class="subNavUl">
-						<li><a href="${pageContext.request.contextPath}/mMenu1_1">- 인사말</a></li>
-						<li><a href="${pageContext.request.contextPath}/mMenu1_2">- 운영방침</a></li>
-						<li><a href="${pageContext.request.contextPath}/mMenu1_3">- 오시는 길</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu01_1">- 인사말</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu01_2">- 운영방침</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu01_3">- 오시는 길</a></li>
 					</ul>
 				</div>
 			</li>
@@ -165,9 +165,9 @@
 				<p>개인회생<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x1.png"></p>
 				<div class="subMenu">
 					<ul class="subNavUl">
-						<li><a href="${pageContext.request.contextPath}/mMenu2_1">- 개인회생이란</a></li>
-						<li><a href="${pageContext.request.contextPath}/mMenu2_2">- 개인회생절차</a></li>
-						<li><a href="${pageContext.request.contextPath}/mMenu2_3">- 개인회생서류</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu02_1">- 개인회생이란</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu02_2">- 개인회생절차</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu02_3">- 개인회생서류</a></li>
 					</ul>
 				</div>
 			</li>
@@ -175,9 +175,9 @@
 				<p>개인파산<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x1.png"></p>
 				<div class="subMenu">
 					<ul class="subNavUl">
-						<li><a href="${pageContext.request.contextPath}/mMenu3_1">- 개인파산이란</a></li>
-						<li><a href="${pageContext.request.contextPath}/mMenu3_2">- 개인파산절차</a></li>
-						<li><a href="${pageContext.request.contextPath}/mMenu3_2">- 개인파산서류</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu03_1">- 개인파산이란</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu03_2">- 개인파산절차</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu03_2">- 개인파산서류</a></li>
 					</ul>
 				</div>
 			</li>
@@ -185,8 +185,8 @@
 				<p>민사<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x1.png"></p>
 				<div class="subMenu">
 					<ul class="subNavUl">
-						<li><a href="${pageContext.request.contextPath}/mMenu4_1">- 민사소송이란</a></li>
-						<li><a href="${pageContext.request.contextPath}/mMenu4_2">- 민사진행절차</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu04_1">- 민사소송이란</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu04_2">- 민사진행절차</a></li>
 					</ul>
 				</div>
 			</li>
@@ -194,9 +194,9 @@
 				<p>자주하는질문<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x1.png"></p>
 				<div class="subMenu">
 					<ul class="subNavUl">
-						<li><a href="${pageContext.request.contextPath}/mMenu5_1">- 개인회생질문</a></li>
-						<li><a href="${pageContext.request.contextPath}/mMenu5_2">- 개인파산질문</a></li>
-						<li><a href="${pageContext.request.contextPath}/mMenu5_3">- 민사질문</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu5_1">- 개인회생질문</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu5_2">- 개인파산질문</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu5_3">- 민사질문</a></li>
 					</ul>
 				</div>
 			</li>

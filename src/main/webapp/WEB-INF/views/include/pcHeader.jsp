@@ -23,9 +23,9 @@
 		overflow:hidden;
 	}
 	.mainLogo{
-		width:250px;
+		width:220px;
 		float:left;
-		margin-top:17px;
+		margin-top:22px;
 		margin-left:10px;
 	}
 	.mainLogo > a{
