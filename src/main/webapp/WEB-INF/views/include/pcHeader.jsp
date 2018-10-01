@@ -79,7 +79,7 @@
 	.subMenuCallInfo > p{
 		font-size:13px;
 		font-weight:600;
-		color:gray;
+		color:lightgray;
 		line-height:25px;
 	}
 	#bigtxt{
@@ -180,7 +180,7 @@
 	.subMenuCallInfo > p{
 		font-size:16px;
 		font-weight:600;
-		color:gray;
+		color:lightgray;
 		line-height:25px;
 	}
 	#bigtxt{

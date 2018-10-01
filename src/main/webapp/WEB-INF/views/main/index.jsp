@@ -138,6 +138,7 @@
 	.contentWrap3{
 		width:100%;
 		overflow:hidden;
+		margin-bottom:12px;
 	}
 	.txt1{
 		float:left;
