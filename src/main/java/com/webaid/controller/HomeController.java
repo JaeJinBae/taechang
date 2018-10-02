@@ -30,4 +30,11 @@ public class HomeController {
 		
 		return "menu01/intro";
 	}
+	
+	@RequestMapping(value = "/menu01_2", method = RequestMethod.GET)
+	public String menu01_02() {
+		logger.info("menu01_02");
+		
+		return "menu01/intro2";
+	}
 }

@@ -102,6 +102,12 @@
 	.navWrap .navUl > li:hover > .sub_subDropdown {
 		display: block;
 	}
+	.content{ 
+		width:100%;
+	}
+	.content > img{
+		width:100%;
+	}
 }
 @media only screen and (min-width:767px) and (max-width:1099px){
 	header{
@@ -273,10 +279,10 @@
 		font-size:19px;
 		text-align: left;
 	}
-	.sideMenuUl > li:first-child{
+	.sideMenuUl > li:nth-child(2){
 		border-bottom:3px solid lightgray;
 	}
-	.sideMenuUl > li:first-child > a{
+	.sideMenuUl > li:nth-child(2) > a{
 		font-weight:600;
 		color: black;
 	}
@@ -335,9 +341,6 @@
 		padding-top:440px;
 		font-size:17px;
 		line-height: 35px;
-	}
-	.content > img{
-		width:100%;
 	}
 }
 </style>
@@ -406,7 +409,7 @@
 						감사합니다.
 					</p>
 				</div> -->
-				<img src="${pageContext.request.contextPath}/resources/images/menu01_1contentImgTest.png">
+				<img src="${pageContext.request.contextPath}/resources/images/menu01_2contentImgTest.png">
 			</div>
 		</div>
 	</section>
