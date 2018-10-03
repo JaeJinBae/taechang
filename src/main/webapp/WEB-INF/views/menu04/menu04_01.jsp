@@ -81,7 +81,7 @@
 		width:20px;
 	}
 	.navWrap .navUl > li:last-child a > .btnArrow{
-		margin-left:60px;
+		margin-left:15px;
 	}
 	.sub_subDropdown{
 		display: none;
@@ -102,7 +102,7 @@
 	.navWrap .navUl > li:hover > .sub_subDropdown {
 		display: block;
 	}
-	.content{
+	.content{ 
 		width:100%;
 	}
 	.content > img{
@@ -359,11 +359,10 @@
 		<div class="contentWrap">
 			<div class="sideMenuWrap">
 				<div class="sideMenu">
-					<h3>태창소개</h3>
+					<h3>민 사</h3>
 					<ul class="sideMenuUl"> 
-						<li><a href="${pageContext.request.contextPath}/menu01_1">인사말</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu01_2">운영방침</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu01_3">오시는 길</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu04_1">민사소송이란</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu04_2">민사진행절차</a></li>
 					</ul>
 				</div><!-- sideMenu end -->
 				<div class="callInfo">
@@ -379,40 +378,25 @@
 					<ul class="navUl"> 
 						<li><a href="${pageContext.request.contextPath}/"><img class="btnHome" src="${pageContext.request.contextPath}/resources/images/home.png"></a></li>
 						<li>
-							<a href="#none">태창소개<img class="btnArrow" src="${pageContext.request.contextPath}/resources/images/down_arrow.png"></a>
+							<a href="#none">민 사<img class="btnArrow" src="${pageContext.request.contextPath}/resources/images/down_arrow.png"></a>
 							<ul class="sub_subDropdown">
+								<li><a href="${pageContext.request.contextPath}/menu01_1">태창소개</a></li>
 								<li><a href="${pageContext.request.contextPath}/menu02_1">개인회생</a></li>
 								<li><a href="${pageContext.request.contextPath}/menu03_1">개인파산</a></li>
-								<li><a href="${pageContext.request.contextPath}/menu04_1">민사</a></li>
 								<li><a href="${pageContext.request.contextPath}/menu05_1">자주하는질문</a></li>
 							</ul>
 						</li>
 						<li>
-							<a href="#none">인사말<img class="btnArrow" src="${pageContext.request.contextPath}/resources/images/down_arrow.png"></a>
+							<a href="#none">민사소송이란<img class="btnArrow" src="${pageContext.request.contextPath}/resources/images/down_arrow.png"></a>
 							<ul class="sub_subDropdown">
-								<li><a href="${pageContext.request.contextPath}/menu01_2">운영방침</a></li>
-								<li><a href="${pageContext.request.contextPath}/menu01_3">오시는 길</a></li>
+								<li><a href="${pageContext.request.contextPath}/menu04_2">민사진행절차</a></li>
 							</ul>	
 						</li>
 					</ul>
 				</div><!-- navWrap end -->
 			</div><!-- sideMenuWrap end -->
 			<div class="content">
-				<!-- <h2>인사말</h2>
-				<div class="contentBox">
-					<p>
-						태창법무사무소는 개인회생/파산에 관하여 10년 이상의 경험과 노하우를 가진 실무진이 사건 진행을 하며,
-						회생/파산 전문가가 직접 사건을 검토하여 최종 결론을 도출합니다. 개인회생/파산사건은 각 지역 법원마다
-						요구하는 보정 정도가 달라 그러한 경험이 없다면 기각될 우려가 높고, 성공하더라도 매월 납입하는
-						납입금이 높을 수도 있습니다. 그렇기에 태창법무사무소에서 진행한다면 그 경험과 노하우에 의하여 사건 처리
-						결과가 달라질 수 있습니다. 그 점이 태창에서 개인회생/파산을 하여야 하는 이유입니다. 
-						저희는 특히 개인회생/파산의 전문가가 각 사건마다 담당자로 정하여져 사건을 처리하기에 사건처리에 관하여
-						문제가 발생할 여지가 적습니다. 기존에 타법무사나 무리하게 수임하는 법률사무소와는 다르다는 점 다시
-						말씀드리며, 어떤 상담에도 저희가 드릴 조언을 아끼지 않을 것입니다.<br>
-						감사합니다.
-					</p>
-				</div> -->
-				<img src="${pageContext.request.contextPath}/resources/images/menu01_1contentImgTest.png">
+				<img src="${pageContext.request.contextPath}/resources/images/menu04_1contentImg.png">
 			</div>
 		</div>
 	</section>

@@ -33,7 +33,7 @@
 	    z-index: 1; /* Stay on top */
 	    top: 0; /* Stay at the top */
 	    right: 0;
-	    background: #033c60;
+	    background: #f2f2f2;
 	    overflow-x: hidden; /* Disable horizontal scroll */
 	    padding-top: 40px; /* Place content 60px from the top */
 	    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -44,7 +44,7 @@
 	    left:0;
 	    font-size: 18px;
 	    margin-left: 20px;
-	    color:#fff;
+	    color:#363636;
 	}
 	.homeBtn > img{
 		display:inline-block;
@@ -53,6 +53,7 @@
 	}
 	.homeBtn > span{
 		margin-left:10px;
+		font-weight:600;
 	}
 	.sidenav .closebtn {
 	    position: absolute;
@@ -60,7 +61,7 @@
 	    right: 16px;
 	    font-size: 40px;
 	    margin-left: 50px;
-	    color:#fff;
+	    color:#363636;
 	}
 	.sidenav > hr{
 		margin-top:15px;
@@ -70,16 +71,20 @@
 	}
 	.sidenav .mainMenu > li{
 		/* margin-bottom:13px; */
-		border-bottom:1px solid #fff;
+		border-bottom:1px solid #363636;
 		text-align: left;
 	}
 	.sidenav .mainMenu > li > p {
 	    padding: 13px 8px 13px 20px;
 	    text-decoration: none;
 	    font-size: 16px;
-	    color: #fff;
+	    color: #363636;
 	    display: block;
 	    transition: 0.3s;
+	    font-weight:600;
+	}
+	.sidenav .mainMenu > li:first-child > p{
+		border-top:1px solid #363636;
 	}
 	.sidenav .mainMenu > li > p > img{
 		width:20px;
@@ -91,7 +96,7 @@
 		display:none;
 		/* margin:0 0px 15px 40px; */
 		padding:15px 0 15px 40px;
-		background: #666;
+		background: #363636;
 	}
 	.subNavUl > li{
 		margin:10px 0;
@@ -108,6 +113,40 @@
 	    transition: margin-right .5s;
 	    padding: 20px;
 	} */
+	.mCallInfo{
+		width:100%;
+		border:1px solid lightgray;
+		padding:15px;
+		margin-top:20px;
+		background: #fff;
+	}
+	.mCallInfoTitle{
+		margin-bottom:10px;
+		font-size:20px;
+	}
+	.mCallInfoTitle:not(#callInfoTitle){
+		margin-top:15px;
+	}
+	.mCallInfo > h3{
+		font-weight:600;	
+		color: #0072bc;
+		font-size:25px;
+	}
+	.mCallInfo > .secondChild{
+		margin-bottom:8px;
+	}
+	.mCallInfo > h5{
+		font-size:14px;
+		font-weight:500;
+	}
+	.mCallInfo > h5:last-child{
+		font-weight:600;
+		font-size:22px;
+	}
+	.blank{
+		display:inline-block;
+		margin-left:3px; 
+	}
 </style>
 <script>
 	// sideNavBar
@@ -128,10 +167,10 @@
 		$(".mainMenu > li > p").click(function(){
 			var index=$(".mainMenu > li > p").index(this);
 			if(arr[index]==0){
-				$(this).find("img").attr("src","${pageContext.request.contextPath}/resources/images/ico_arr_nav_up_x1.png");
+				$(this).find("img").attr("src","${pageContext.request.contextPath}/resources/images/ico_arr_nav_up_x2.png");
 				arr[index]=1;
 			}else{
-				$(this).find("img").attr("src","${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x1.png");
+				$(this).find("img").attr("src","${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png");
 				arr[index]=0;
 			}
 			 
@@ -152,7 +191,7 @@
 		<hr>
 		<ul class="mainMenu">
 			<li>
-				<p>태창소개 <img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x1.png"></p>
+				<p>태창소개 <img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
 				<div class="subMenu">
 					<ul class="subNavUl">
 						<li><a href="${pageContext.request.contextPath}/menu01_1">- 인사말</a></li>
@@ -162,7 +201,7 @@
 				</div>
 			</li>
 			<li>
-				<p>개인회생<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x1.png"></p>
+				<p>개인회생<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
 				<div class="subMenu">
 					<ul class="subNavUl">
 						<li><a href="${pageContext.request.contextPath}/menu02_1">- 개인회생이란</a></li>
@@ -172,7 +211,7 @@
 				</div>
 			</li>
 			<li>
-				<p>개인파산<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x1.png"></p>
+				<p>개인파산<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
 				<div class="subMenu">
 					<ul class="subNavUl">
 						<li><a href="${pageContext.request.contextPath}/menu03_1">- 개인파산이란</a></li>
@@ -182,7 +221,7 @@
 				</div>
 			</li>
 			<li>
-				<p>민사<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x1.png"></p>
+				<p>민사<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
 				<div class="subMenu">
 					<ul class="subNavUl">
 						<li><a href="${pageContext.request.contextPath}/menu04_1">- 민사소송이란</a></li>
@@ -191,15 +230,24 @@
 				</div>
 			</li>
 			<li>
-				<p>자주하는질문<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x1.png"></p>
+				<p>자주하는질문<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
 				<div class="subMenu">
 					<ul class="subNavUl">
-						<li><a href="${pageContext.request.contextPath}/menu5_1">- 개인회생질문</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu5_2">- 개인파산질문</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu5_3">- 민사질문</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu05_1">- 개인회생질문</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu05_2">- 개인파산질문</a></li>
+						<li><a href="${pageContext.request.contextPath}/menu05_3">- 민사질문</a></li>
 					</ul>
 				</div>
 			</li>
 		</ul>
+		<div class="mCallInfo">
+			<h4 class="mCallInfoTitle" id="mCallInfoTitle">상담센터</h4>
+			<h3>1877 - 0757</h3>
+			<h3 class="secondChild">053-745-1332</h3>
+			<h5>Fax. 053-751-1696</h5>
+			<h5>E-mail. tc119@naver.com</h5>
+			<h4 class="mCallInfoTitle">운영시간</h4>
+			<h5>AM 09:00<span class="blank"> ~ PM 06:00</span></h5>
+		</div><!-- callInfo end -->
 	</div>
 </div>
