@@ -67,7 +67,7 @@
 		margin-top:15px;
 		margin-bottom:0;
 		border:0;
-		border-top:2px solid #fff;
+		border-top:2px solid #363636;
 	}
 	.sidenav .mainMenu > li{
 		/* margin-bottom:13px; */

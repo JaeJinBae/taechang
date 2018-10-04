@@ -22,6 +22,11 @@
 		position:fixed;
 		z-index: 99;		
 	}
+	footer{
+		width:100%;
+		min-width:320px;
+		background:#2a2a2a;
+	}
 	section{
 		width:100%;
 		min-width:320px;
@@ -124,8 +129,7 @@
 	footer{
 		width:100%;
 		min-width:767px;
-		height:150px;
-		background: #52575b; 
+		background:#2a2a2a;
 	}
 	.topImg{
 		width:100%;
@@ -235,8 +239,7 @@
 	footer{
 		width:100%;
 		min-width:1100px;
-		height:150px;
-		background: #52575b; 
+		background:#2a2a2a;
 	}
 	.topImg{
 		width:100%;
@@ -403,7 +406,7 @@
 		</div>
 	</section>
 	<footer>
-	
+		<jsp:include page="../include/footer.jsp"></jsp:include>
 	</footer>
 </body>
 </html>

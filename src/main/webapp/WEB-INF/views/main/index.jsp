@@ -19,12 +19,13 @@
 @media only screen and (min-width:320px) and (max-width:766px){
 	body{
 		position: relative;
+		z-index: 9;
 	}
 	header{
 		width:100%;
 		background:#fff;
 		position:fixed;
-		z-index: 99;		
+		z-index: 999;		
 	}
 	section{
 		padding:15px 3px;
@@ -33,8 +34,7 @@
 	footer{
 		width:100%;
 		min-width:320px;
-		height:150px; 
-		background: #52575b;
+		background:#2a2a2a;
 	}
 	.mainSlider{
 		width:100%;
@@ -174,8 +174,7 @@
 	footer{
 		width:100%;
 		min-width:767px;
-		height:150px;
-		background: #52575b;
+		background:#2a2a2a;
 	}
 	.mainSlider{
 		width:100%;
@@ -343,8 +342,7 @@
 	footer{
 		width:100%;
 		min-width:1100px;
-		height:150px;
-		background: #52575b;
+		background:#2a2a2a;
 	}
 	.mainSlider{
 		width:100%;
@@ -518,7 +516,7 @@
 	});
 </script>
 </head>
-<body>
+<body id="main">
 	<header>
 		<jsp:include page="../include/pcHeader.jsp"></jsp:include>
 	</header>
@@ -541,7 +539,7 @@
 						<div class="txtBox">
 							<div class="txtTitle">
 								<h4>개인회생</h4>
-								<a href="">더보기+</a>
+								<a href="${pageContext.request.contextPath}/menu02_1">더보기+</a>
 							</div>
 							<p>최상의 해결책을 마련하여 소중한 고객님의 인생을 지켜드리겠습니다.</p>
 						</div>
@@ -550,7 +548,7 @@
 						<div class="txtBox">
 							<div class="txtTitle">
 								<h4>개인파산</h4>
-								<a href="">더보기+</a>
+								<a href="${pageContext.request.contextPath}/menu03_1">더보기+</a>
 							</div>
 							<p>신뢰로 최선을 다하는 태창이 고객님을 지켜드리겠습니다.</p>
 						</div>
@@ -559,7 +557,7 @@
 						<div class="txtBox">
 							<div class="txtTitle">
 								<h4>민사소송</h4>
-								<a href="">더보기+</a>
+								<a href="${pageContext.request.contextPath}/menu04_1">더보기+</a>
 							</div>
 							<p>다루고자하는 권리의무관계에 대하여 법원의 판단을 구하는 절차 태창이 돕겠습니다.</p>
 						</div>
@@ -575,7 +573,7 @@
 					<!-- <h3>태창 인사말</h3> -->
 				</div>
 				<div class="section2Content_content">
-					<a href="${pageContext.request.contextPath}/">
+					<a href="${pageContext.request.contextPath}/menu01_1">
 						<img src="${pageContext.request.contextPath}/resources/images/mainContentBoxImg1.png">
 					</a>
 				</div>
@@ -585,7 +583,7 @@
 					<!-- <h3>태창 업무방침</h3> -->
 				</div>
 				<div class="section2Content_content">
-					<a href="${pageContext.request.contextPath}/">
+					<a href="${pageContext.request.contextPath}/menu01_2">
 						<img src="${pageContext.request.contextPath}/resources/images/mainContentBoxImg2.png">
 					</a>
 				</div>
@@ -620,7 +618,7 @@
 		<div class="contentWrap3">
 			<div class="smallTitle">
 				<h2 class="txt1">오시는 길</h2>
-				<p class="txt2"><a href="#none">더보기+</a></p>
+				<p class="txt2"><a href="${pageContext.request.contextPath}/menu01_3">더보기+</a></p>
 			</div>
 		</div>
 		<div class="mapWrap">
@@ -643,7 +641,7 @@
 		</div>
 	</section>
 	<footer>
-	
+		<jsp:include page="../include/footer.jsp"></jsp:include>
 	</footer>
 </body>
 </html>
