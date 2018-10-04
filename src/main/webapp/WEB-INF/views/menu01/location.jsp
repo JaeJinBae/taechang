@@ -10,6 +10,7 @@
 <title>insert title here</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/common.css?ver=4">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=LTB96xNxL2gd5pnixyId&submodules=geocoder"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
 @media only screen and (min-width:320px) and (max-width:766px){
@@ -325,25 +326,19 @@
 		width:870px;
 		background: #fff;
 	}
-	.content > h2{
+	.content > h1{
 		width:100%;
 		text-align: center;
 		font-weight:bold;
-		padding:30px 0;
+		padding:80px 0; 
 	}
-	.contentBox{
+	.mapWrap{
 		width:100%;
-		height:825px;
-		background: url("${pageContext.request.contextPath}/resources/images/menu01TopImgTest2.png") no-repeat;
-		background-size:cover;
-		position: relative;
 	}
-	.contentBox > p{
-		width:697px;
+	#map{
+		width:90%;
 		margin:0 auto;
-		padding-top:440px;
-		font-size:17px;
-		line-height: 35px;
+		height:500px;
 	}
 	.content > img{
 		width:100%;
@@ -401,7 +396,25 @@
 				</div><!-- navWrap end -->
 			</div><!-- sideMenuWrap end -->
 			<div class="content">
-				
+				<h1>오시는 길</h1>
+				<div class="mapWrap">
+					<div id="map"></div>
+					<script> 
+						var mapOptions = {
+						    center: new naver.maps.LatLng(35.862259, 128.626323),
+						    zoom: 13
+						};
+						 
+						var map = new naver.maps.Map('map', mapOptions);
+						
+						var marker = new naver.maps.Marker({
+						    position: new naver.maps.LatLng(35.862259, 128.626323),
+						    map: map
+						});
+						
+					</script>
+				</div>
+				<img src="${pageContext.request.contextPath}/resources/images/location.png">
 			</div>
 		</div>
 	</section>
