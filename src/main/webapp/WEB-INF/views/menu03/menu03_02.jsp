@@ -357,7 +357,7 @@
 	</header>
 	<section>
 		<div class="topImg">
-			<img src="${pageContext.request.contextPath}/resources/images/menu01TopImgTest.png">
+			<img src="${pageContext.request.contextPath}/resources/images/menu03TopImg.png">
 		</div>
 		<div class="contentWrap">
 			<div class="sideMenuWrap">

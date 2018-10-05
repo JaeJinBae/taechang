@@ -110,9 +110,27 @@
 	}
 	.content{ 
 		width:100%;
+		background: #fff;
+	}
+	.content > h1{
+		width:100%;
+		text-align: center;
+		font-weight:bold;
+		font-size:20px;
+		padding:45px 0; 
+	}
+	.mapWrap{
+		width:100%;
+	}
+	#map{
+		width:95%;
+		margin:0 auto;
+		height:350px;
+		border:1px solid gray;
 	}
 	.content > img{
 		width:100%;
+		margin-bottom:20px;
 	}
 }
 @media only screen and (min-width:767px) and (max-width:1099px){
@@ -218,8 +236,24 @@
 		display:none;
 	}
 	.content{ 
-		float:right;
 		width:607px;
+		background: #fff;
+	}
+	.content > h1{
+		width:100%;
+		text-align: center;
+		font-weight:bold;
+		font-size:28px;
+		padding:60px 0; 
+	}
+	.mapWrap{
+		width:100%;
+	}
+	#map{
+		width:90%;
+		margin:0 auto;
+		height:450px;
+		border:1px solid gray;
 	}
 	.content > img{
 		width:100%;
@@ -339,6 +373,7 @@
 		width:90%;
 		margin:0 auto;
 		height:500px;
+		border:1px solid gray;
 	}
 	.content > img{
 		width:100%;
@@ -352,7 +387,7 @@
 	</header>
 	<section>
 		<div class="topImg">
-			<img src="${pageContext.request.contextPath}/resources/images/menu01TopImgTest.png">
+			<img src="${pageContext.request.contextPath}/resources/images/menu01TopImg.png">
 		</div>
 		<div class="contentWrap">
 			<div class="sideMenuWrap">
@@ -414,7 +449,7 @@
 						
 					</script>
 				</div>
-				<img src="${pageContext.request.contextPath}/resources/images/location.png">
+				<img src="${pageContext.request.contextPath}/resources/images/locationtest.png">
 			</div>
 		</div>
 	</section>

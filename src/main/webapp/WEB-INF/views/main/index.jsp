@@ -46,7 +46,9 @@
 	}
 	.mainBanner div img{
 		width:100%;
-		/* height:130px; */
+	}
+	.pcMainBanner{
+		display:none;
 	}
 	.slick-dots{
 		bottom:0;
@@ -186,6 +188,9 @@
 	}
 	.mainBanner div img{
 		width:100%;
+	}
+	.pcMainBanner{
+		display:none;
 	}
 	#section1{
 		padding:50px 0;
@@ -348,11 +353,15 @@
 		width:100%;
 		min-width:1100px;
 	}
+	
 	.mainBanner{
 		width:100%;
 	}
 	.mainBanner div img{
 		width:100%;
+	}
+	.tmMainBanner{
+		display:none;
 	}
 	#section1{
 		padding:50px 0;
@@ -521,10 +530,15 @@
 		<jsp:include page="../include/pcHeader.jsp"></jsp:include>
 	</header>
 	<div class="mainSlider">
-		<div class="mainBanner">
+		<div class="mainBanner pcMainBanner">
 			<div><img src="${pageContext.request.contextPath}/resources/images/mainSlider1.png" alt="태창법무사사무소"></div>
 			<div><img src="${pageContext.request.contextPath}/resources/images/mainSlider2.png" alt="태창법무사사무소"></div>
 			<div><img src="${pageContext.request.contextPath}/resources/images/mainSlider3.png" alt="태창법무사사무소"></div>
+		</div>
+		<div class="mainBanner tmMainBanner">
+			<div><img src="${pageContext.request.contextPath}/resources/images/tmMainSlider1.png" alt="태창법무사사무소"></div>
+			<div><img src="${pageContext.request.contextPath}/resources/images/tmMainSlider2.png" alt="태창법무사사무소"></div>
+			<div><img src="${pageContext.request.contextPath}/resources/images/tmMainSlider3.png" alt="태창법무사사무소"></div>
 		</div>
 	</div>
 	<section id="section1">
