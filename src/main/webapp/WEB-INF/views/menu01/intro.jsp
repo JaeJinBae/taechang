@@ -113,6 +113,9 @@
 	.content > img{
 		width:100%;
 	}
+	.pcContent{
+		display:none;
+	}
 }
 @media only screen and (min-width:767px) and (max-width:1099px){
 	header{
@@ -222,6 +225,9 @@
 	}
 	.content > img{
 		width:100%;
+	}
+	.pcContent{
+		display:none;
 	}
 }
 @media only screen and (min-width:1100px){
@@ -348,6 +354,9 @@
 	.content > img{
 		width:100%;
 	}
+	.tmContent{
+		display:none;
+	}
 }
 </style>
 </head>
@@ -415,7 +424,8 @@
 						감사합니다.
 					</p>
 				</div> -->
-				<img src="${pageContext.request.contextPath}/resources/images/menu01_1contentImgTest.png">
+				<img class="pcContent" src="${pageContext.request.contextPath}/resources/images/menu01_1contentImg.png">
+				<img class="tmContent" src="${pageContext.request.contextPath}/resources/images/tmMenu01_1contentImg.png">
 			</div>
 		</div>
 	</section>
