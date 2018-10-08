@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>insert title here</title>
+<title>오시는 실 | 태창법무사사무소</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/common.css?ver=4">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=LTB96xNxL2gd5pnixyId&submodules=geocoder"></script>
@@ -237,6 +237,7 @@
 	}
 	.content{ 
 		width:607px;
+		float:right;
 		background: #fff;
 	}
 	.content > h1{

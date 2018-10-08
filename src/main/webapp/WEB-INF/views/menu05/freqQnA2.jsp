@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>개인회생자주하는질문 | 태창법무사사무소</title>
+<title>개인파산자주하는질문 | 태창법무사사무소</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/common.css?ver=4">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="${pageContext.request.contextPath}/resources/js/collapsibleQnA.js"></script>
@@ -135,6 +135,10 @@
 		display:block;
 		font-size:18px;
 	}
+	.collapsible_title > a:hover{
+		text-decoration: underline;
+		color:#5c5c5c;
+	}
 	.collapsibleContent{
 		font-size:15px;
 		padding:15px;
@@ -251,6 +255,7 @@
 	.content{ 
 		float:right;
 		width:607px;
+		background: #fff;
 	}
 	.content > img{
 		width:100%;
@@ -272,9 +277,13 @@
 		border-radius: 4px;
 		text-align: left;
 	}
-	.collapsible_title>a{
+	.collapsible_title > a{
 		display:block;
 		font-size:18px;
+	}
+	.collapsible_title > a:hover{
+		text-decoration: underline;
+		color:#5c5c5c;
 	}
 	.collapsibleContent{
 		font-size:15px;
@@ -428,9 +437,13 @@
 		border-radius: 4px;
 		text-align: left;
 	}
-	.collapsible_title>a{
+	.collapsible_title > a{
 		display:block;
 		font-size:18px;
+	}
+	.collapsible_title > a:hover{
+		text-decoration: underline;
+		color:#5c5c5c;
 	}
 	.collapsibleContent{
 		font-size:15px;
@@ -497,7 +510,7 @@
 			<div class="content">
 				<ul class="collapsibleWrap">
 				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 개인파산은 소득이 전혀 없는 채무자만 신청할 수 있는지?</a></h2>
+					<h2 class="collapsible_title"><a href="#none">Q. 개인파산은 소득이 전혀 없는 채무자만 신청할 수 있는지?</a></h2>
 					<p class="collapsibleContent">
 						채무자가 소득이 없거나 소득이 있다고 하더라도 최저생활을 할 수 있는 수준의 소득만 있다면 개인파산을 신청할 수 있습니다.
 					</p>

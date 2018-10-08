@@ -40,7 +40,10 @@
 	}
 	.mainMenuUl > li:hover{
 		border-bottom:4px solid red;
-	} 
+	}
+	.mainMenuUl:hover .subMenuWrap{
+		display:block;
+	}
 	.subMenuWrap{
 		display:none;
 		width:100%;
@@ -75,39 +78,39 @@
 					<a href="#none">개인회생</a>
 					<div class="subMenuWrap">
 						<ul class="subMenuUl">
-						<li><a href="">개인회생이란</a></li>
-						<li><a href="">개인회생절차</a></li>
-						<li><a href="">개인회생서류</a></li>
-					</ul>
+							<li><a href="">개인회생이란</a></li>
+							<li><a href="">개인회생절차</a></li>
+							<li><a href="">개인회생서류</a></li>
+						</ul>
 					</div>
 				</li>
 				<li>
 					<a href="#none">개인파산</a>
 					<div class="subMenuWrap">
 						<ul class="subMenuUl">
-						<li><a href="">개인파산이란</a></li>
-						<li><a href="">개인파산절차</a></li>
-						<li><a href="">개인파산서류</a></li>
-					</ul>
+							<li><a href="">개인파산이란</a></li>
+							<li><a href="">개인파산절차</a></li>
+							<li><a href="">개인파산서류</a></li>
+						</ul>
 					</div>
 				</li>
 				<li>
 					<a href="#none">민사</a>
 					<div class="subMenuWrap">
 						<ul class="subMenuUl">
-						<li><a href="">민사소송이란</a></li>
-						<li><a href="">민사진행절차</a></li>
-					</ul>
+							<li><a href="">민사소송이란</a></li>
+							<li><a href="">민사진행절차</a></li>
+						</ul>
 					</div>
 				</li>
 				<li>
 					<a href="#none">자주하는질문</a>
 					<div class="subMenuWrap">
 						<ul class="subMenuUl">
-						<li><a href="">개인회생질문</a></li>
-						<li><a href="">개인파산질문</a></li>
-						<li><a href="">민사질문</a></li>
-					</ul>
+							<li><a href="">개인회생질문</a></li>
+							<li><a href="">개인파산질문</a></li>
+							<li><a href="">민사질문</a></li>
+						</ul>
 					</div>
 				</li>
 			</ul>

@@ -18,7 +18,7 @@
 	header{
 		width:100%;
 		min-width:1100px;
-		height:115px;
+		/* height:115px; */
 		position: relative; 
 		z-index: 99;
 		background: yellow;

@@ -133,7 +133,11 @@
 	}
 	.collapsible_title > a{
 		display:block;
-		font-size:18px;
+		font-size:16px;
+	}
+	.collapsible_title > a:hover{
+		text-decoration: underline;
+		color:#5c5c5c;
 	}
 	.collapsibleContent{
 		font-size:15px;
@@ -251,6 +255,7 @@
 	.content{ 
 		float:right;
 		width:607px;
+		background: #fff;
 	}
 	.content > img{
 		width:100%;
@@ -272,9 +277,13 @@
 		border-radius: 4px;
 		text-align: left;
 	}
-	.collapsible_title>a{
+	.collapsible_title  >a{
 		display:block;
 		font-size:18px;
+	}
+	.collapsible_title > a:hover{
+		text-decoration: underline;
+		color:#5c5c5c;
 	}
 	.collapsibleContent{
 		font-size:15px;
@@ -428,9 +437,13 @@
 		border-radius: 4px;
 		text-align: left;
 	}
-	.collapsible_title>a{
+	.collapsible_title > a{
 		display:block;
 		font-size:18px;
+	}
+	.collapsible_title > a:hover{
+		text-decoration: underline;
+		color:#5c5c5c;
 	}
 	.collapsibleContent{
 		font-size:15px;

@@ -214,28 +214,34 @@
 </style>
 <script>
 	$(function(){
+		var menuNum = 0;
 		$(".mainMenuUl").hover(function(){
-			/* $(".subMenuWrap").addClass("displayBlock"); */
-			subMenuChk();
+			menuNum++;
+			subMenuDisplayFunc(menuNum);
+			console.log(menuNum);
 		},function(){
-			/* subMenuChk(); */
+			menuNum--;
+			if(menuNum < 0){
+				console.log(menuNum + "mainMenu out");
+				subMenuDisplayFunc(menuNum);
+			}
 		});
 		
 		$(".subMenuWrap").hover(function(){
-			$(this).css("display","block");
+			menuNum++;
+			//subMenuDisplayFunc(menuNum);
+			console.log(menuNum);
 		},function(){
-			$(this).css("display","none");
+			menuNum--;
+			console.log(menuNum);
+			subMenuDisplayFunc(menuNum);
 		});
 	});
-	function subMenuChk(){
-		var state=$(".subMenuWrap").css("display");
-		subMenuDisplayFunc(state);
-	}
 	
 	function subMenuDisplayFunc(state){
-		if(state=="none"){
+		if(state > 0){
 			$(".subMenuWrap").slideDown("fast");
-		}else if(state=="block"){
+		}else if(state <= 0){
 			$(".subMenuWrap").slideUp("fast");
 		}
 	}
