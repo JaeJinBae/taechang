@@ -16,8 +16,7 @@
 <style>
 	header{
 		width:100%;
-		height:100px;
-		background: yellow;
+		background: #033c60;
 		border-bottom:1px solid black;
 	}
 	section{
@@ -32,7 +31,7 @@
 	.mainSlider{
 		width:100%;
 		height:600px;
-		background: #033c60;
+		background: pink;
 	}
 	.contentWrap{
 		width:1100px;
@@ -78,7 +77,7 @@
 </head>
 <body>
 	<header>
-	
+		<jsp:include page="include/pcHeaderTest.jsp"></jsp:include>
 	</header>
 	<section>
 		<div class="mainSlider">

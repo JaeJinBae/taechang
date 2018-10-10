@@ -113,6 +113,9 @@
 	}
 }
 @media only screen and (min-width:1100px){
+	html, body{
+		height:auto;
+	}
 	.mHeaderWrap{
 		display:none;
 	}
@@ -225,32 +228,21 @@
 			console.log(menuArr);
 			$(".subMenuWrap").slideDown("fast");
 		},function(){
-			menuArr[0] = 0;
-			menuArr[1] = 1;
-			console.log(menuArr);
-			if(menuArr[3]==1){
-				$(".subMenuWrap").slideUp("fast");
-				menuArr=[0,0,0,0];
-				console.log(menuArr);
-			}
+
 		});
-		
+		 
 		$(".subMenuWrap").hover(function(){
 			menuArr[2]=1;
 			console.log(menuArr);
 		},function(){
-			menuArr[3]=1;
-			console.log(menuArr);
-			if(menuArr[1] == 1){
-				$(".subMenuWrap").slideUp("fast");
-			}
+ 
 		});
 		
-		/* $(".menu").hover(function(){
-			
-		},function(){
+		$("body, .mainSlider, section").hover(function(){
 			$(".subMenuWrap").slideUp("fast");
-		}); */
+			console.log("not .menu");
+		});
+		
 		
 		var selectIndex=0;
 		$(".subMenuUl").hover(function(){
