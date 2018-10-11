@@ -235,7 +235,7 @@
 					<ul class="subNavUl">
 						<li><a href="${pageContext.request.contextPath}/menu05_1">- 개인회생질문</a></li>
 						<li><a href="${pageContext.request.contextPath}/menu05_2">- 개인파산질문</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu05_3">- 민사질문</a></li>
+						<%-- <li><a href="${pageContext.request.contextPath}/menu05_3">- 민사질문</a></li> --%>
 					</ul>
 				</div>
 			</li>

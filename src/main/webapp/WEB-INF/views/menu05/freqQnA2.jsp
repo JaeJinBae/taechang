@@ -39,6 +39,9 @@
 	.topImg > img{
 		width:100%;
 	}
+	.pcTopImg{
+		display:none;
+	}
 	.sideMenu, .callInfo{
 		display:none;
 	}
@@ -146,16 +149,22 @@
 		text-align: left;
 	}
 	.selected{
-		text-decoration: underline;
+		text-decoration: underline !important;
 		font-weight: bold;
+		color:#5c5c5c !important;
 	}
 }
 @media only screen and (min-width:767px) and (max-width:1099px){
+	body{
+		position: relative;
+	}
 	header{
 		width:100%;
 		min-width:767px;
-		height:95px;
-		position: relative; 
+		/* height:95px; */
+		background: #033c60;
+		position: absolute;
+		top:0; 
 		z-index: 99;
 	}
 	section{
@@ -169,9 +178,13 @@
 	}
 	.topImg{
 		width:100%;
+		padding-top:98px;
 	}
 	.topImg > img{
 		width:100%;
+	}
+	.mTopImg{
+		display:none;
 	}
 	.contentWrap{
 		width:767px;
@@ -292,16 +305,22 @@
 		text-align: left;
 	}
 	.selected{
-		text-decoration: underline;
+		text-decoration: underline !important;
 		font-weight: bold;
+		color:#5c5c5c !important;
 	}
 }
 @media only screen and (min-width:1100px){
+	body{
+		position: relative;
+	}
 	header{
 		width:100%;
 		min-width:1100px;
-		height:115px;
-		position: relative; 
+		/* height:115px; */
+		background: #033c60;
+		position: absolute;
+		top:0; 
 		z-index: 99;
 	}
 	section{
@@ -315,9 +334,13 @@
 	}
 	.topImg{
 		width:100%;
+		padding-top:115px;
 	}
 	.topImg > img{
 		width:100%;
+	}
+	.mTopImg{
+		display:none;
 	}
 	.contentWrap{
 		width:1100px;
@@ -452,19 +475,21 @@
 		text-align: left;
 	}
 	.selected{
-		text-decoration: underline;
+		text-decoration: underline !important;
 		font-weight: bold;
+		color:#5c5c5c !important;
 	}
 }
 </style>
 </head>
 <body>
 	<header>
-		<jsp:include page="../include/pcHeader.jsp"></jsp:include>
+		<jsp:include page="../include/pcHeaderTest.jsp"></jsp:include>
 	</header>
 	<section>
 		<div class="topImg">
-			<img src="${pageContext.request.contextPath}/resources/images/menu05TopImg.png">
+			<img class="pcTopImg" src="${pageContext.request.contextPath}/resources/images/menu05TopImg.png">
+			<img class="mTopImg" src="${pageContext.request.contextPath}/resources/images/mMenu05TopImg.png">
 		</div>
 		<div class="contentWrap">
 			<div class="sideMenuWrap">
@@ -473,7 +498,7 @@
 					<ul class="sideMenuUl"> 
 						<li><a href="${pageContext.request.contextPath}/menu05_1">개인회생질문</a></li>
 						<li><a href="${pageContext.request.contextPath}/menu05_2">개인파산질문</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu05_3">민사질문</a></li>
+						<%-- <li><a href="${pageContext.request.contextPath}/menu05_3">민사질문</a></li> --%>
 					</ul>
 				</div><!-- sideMenu end -->
 				<div class="callInfo">
@@ -501,7 +526,7 @@
 							<a href="#none">개인파산질문<img class="btnArrow" src="${pageContext.request.contextPath}/resources/images/down_arrow.png"></a>
 							<ul class="sub_subDropdown">
 								<li><a href="${pageContext.request.contextPath}/menu05_1">개인회생질문</a></li>
-								<li><a href="${pageContext.request.contextPath}/menu05_3">민사질문</a></li>
+								<%-- <li><a href="${pageContext.request.contextPath}/menu05_3">민사질문</a></li> --%>
 							</ul>	
 						</li>
 					</ul>
@@ -509,109 +534,78 @@
 			</div><!-- sideMenuWrap end -->
 			<div class="content">
 				<ul class="collapsibleWrap">
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#none">Q. 개인파산은 소득이 전혀 없는 채무자만 신청할 수 있는지?</a></h2>
-					<p class="collapsibleContent">
-						채무자가 소득이 없거나 소득이 있다고 하더라도 최저생활을 할 수 있는 수준의 소득만 있다면 개인파산을 신청할 수 있습니다.
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 최저생계비는 어떻게 산정하는지?</a></h2>
-					<p class="collapsibleContent">
-						  최저생계비는 채무자 개인 또는 생계를 함께 하는 가족들이 일상생활을 하는데 소요되는 최소한의 생활비를 국가에서 정하는 것으로, 보건복지부에서 매년 고시하고 있습니다.
-						  법원에서는 이 고시를 기준으로 150%의 범위 내에서 생계비를 인정하는 편입니다.
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 파산신청 후 취업이 가능한지?</a></h2>
-					<p class="collapsibleContent">
-						파산을 신청한 후에도 취업이 가능하며, 소득활동을 할 수 있습니다. 면책을 받은 후에도 불이익은 없습니다.
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 파산을 신청할 수 있는 채무의 한계 및 종류는?</a></h2>
-					<p class="collapsibleContent">
-						인파산의 경우 부채의 한도는 없고, 채무의 종류 역시 제한이 없으므로 금융권 채무 뿐 아니라 개인간의 채무, 휴대폰요금 등도 면책이 가능합니다.
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 신청에서 면책까지 소요되는 기간?</a></h2>
-					<p class="collapsibleContent">
-						채무자 개인별로 다르기는 하지만 대부분 6개월에서 1년 사이에 절차가 완료됩니다. 
-						다만 절차 진행 도중 법원의 보정명령 등에 불응하는 등 채무자의 비협조로 절차가 지연되면 그만큼 처리기간도 늘어납니다.
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 면책되지 않는 채권은 어떤 것인지?</a></h2>
-					<p class="collapsibleContent">
-						조세채권, 벌금, 추징금, 과태료, 채무자의 불법행위로 인한 손해배상금 등은 면책이 되지 않으므로 유의하여야 합니다.
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 변호사나 법무사 조력없이 혼자 진행할 수 있는지?</a></h2>
-					<p class="collapsibleContent">
-						혼자 진행하는 것도 가능합니다. 다만 신청서를 제출한 이후에도 법원에서 수시로 보정을 요구하는데 이에 제대로 대응하지 못하면 기각될 확률이 높고, 다시 새롭게 절차를 진행해야 되므로 그만큼 시일이 오래 걸리는 불이익이 있습니다. 
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 파산하면 은행거래가 불가능한지?</a></h2>
-					<p class="collapsibleContent">
-						파산해도 통장개설은 가능합니다. 다만 채무자 명의로 대출이 불가능할 것입니다.
-						또한 파산신청후 아직 면책을 받지 않았다면 채권자의 강제집행 염려 때문에 대부분 금융권에 예금을 개설하지 않는 경우가 많습니다.
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 은행에서 민사소송을 걸어 비용을 부담하겠다는 통지가 온 경우?</a></h2>
-					<p class="collapsibleContent">
-						소장이나 지급명령결정문이 법원으로부터 온다면 채무액을 확인한 후 이에 대해 답변서나 이의신청서를 제출해야 합니다.
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 법원예납금을 납부하지 않는다면?</a></h2>
-					<p class="collapsibleContent">
-						파산을 신청한 이후 법원에서는 파산관재인 보수 등과 같은 비용을 예납하도록 안내하고 있습니다. 
-						이에 불응하여 납부하지 않는다면 법원에서는 파산신청에 대해 기각결정을 내립니다.
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 부모가 개인파산을 신청하게 되면 자녀에게 피해가 가는지?</a></h2>
-					<p class="collapsibleContent">
-						개인파산 신청 후 면책을 받게 되면 파산자는 자동으로 복권이 됩니다. 
-						그러면 아무런 문제없이 은행거래가 가능하며 개인사업자 등록을 하는데도 문제가 되지 않는 등 공·사법상 활동에 제약이 없기에 자녀에게 피해가 가지 않습니다.
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. </a></h2>
-					<p class="collapsibleContent">
-						
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. </a></h2>
-					<p class="collapsibleContent">
-						 
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. </a></h2>
-					<p class="collapsibleContent">
-						
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. </a></h2>
-					<p class="collapsibleContent">
-						
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. </a></h2>
-					<p class="collapsibleContent">
-						 
-					</p>
-				</li>
-				
-			</ul><!-- collapsibleWrap end -->
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#none">Q. 개인파산은 소득이 전혀 없는 채무자만 신청할 수 있는지?</a></h2>
+						<p class="collapsibleContent">
+							채무자가 소득이 없거나 소득이 있다고 하더라도 최저생활을 할 수 있는 수준의 소득만 있다면 개인파산을 신청할 수 있습니다.
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 최저생계비는 어떻게 산정하는지?</a></h2>
+						<p class="collapsibleContent">
+							  최저생계비는 채무자 개인 또는 생계를 함께 하는 가족들이 일상생활을 하는데 소요되는 최소한의 생활비를 국가에서 정하는 것으로, 보건복지부에서 매년 고시하고 있습니다.
+							  법원에서는 이 고시를 기준으로 150%의 범위 내에서 생계비를 인정하는 편입니다.
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 파산신청 후 취업이 가능한지?</a></h2>
+						<p class="collapsibleContent">
+							파산을 신청한 후에도 취업이 가능하며, 소득활동을 할 수 있습니다. 면책을 받은 후에도 불이익은 없습니다.
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 파산을 신청할 수 있는 채무의 한계 및 종류는?</a></h2>
+						<p class="collapsibleContent">
+							인파산의 경우 부채의 한도는 없고, 채무의 종류 역시 제한이 없으므로 금융권 채무 뿐 아니라 개인간의 채무, 휴대폰요금 등도 면책이 가능합니다.
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 신청에서 면책까지 소요되는 기간?</a></h2>
+						<p class="collapsibleContent">
+							채무자 개인별로 다르기는 하지만 대부분 6개월에서 1년 사이에 절차가 완료됩니다. 
+							다만 절차 진행 도중 법원의 보정명령 등에 불응하는 등 채무자의 비협조로 절차가 지연되면 그만큼 처리기간도 늘어납니다.
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 면책되지 않는 채권은 어떤 것인지?</a></h2>
+						<p class="collapsibleContent">
+							조세채권, 벌금, 추징금, 과태료, 채무자의 불법행위로 인한 손해배상금 등은 면책이 되지 않으므로 유의하여야 합니다.
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 변호사나 법무사 조력없이 혼자 진행할 수 있는지?</a></h2>
+						<p class="collapsibleContent">
+							혼자 진행하는 것도 가능합니다. 다만 신청서를 제출한 이후에도 법원에서 수시로 보정을 요구하는데 이에 제대로 대응하지 못하면 기각될 확률이 높고, 다시 새롭게 절차를 진행해야 되므로 그만큼 시일이 오래 걸리는 불이익이 있습니다. 
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 파산하면 은행거래가 불가능한지?</a></h2>
+						<p class="collapsibleContent">
+							파산해도 통장개설은 가능합니다. 다만 채무자 명의로 대출이 불가능할 것입니다.
+							또한 파산신청후 아직 면책을 받지 않았다면 채권자의 강제집행 염려 때문에 대부분 금융권에 예금을 개설하지 않는 경우가 많습니다.
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 은행에서 민사소송을 걸어 비용을 부담하겠다는 통지가 온 경우?</a></h2>
+						<p class="collapsibleContent">
+							소장이나 지급명령결정문이 법원으로부터 온다면 채무액을 확인한 후 이에 대해 답변서나 이의신청서를 제출해야 합니다.
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 법원예납금을 납부하지 않는다면?</a></h2>
+						<p class="collapsibleContent">
+							파산을 신청한 이후 법원에서는 파산관재인 보수 등과 같은 비용을 예납하도록 안내하고 있습니다. 
+							이에 불응하여 납부하지 않는다면 법원에서는 파산신청에 대해 기각결정을 내립니다.
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 부모가 개인파산을 신청하게 되면 자녀에게 피해가 가는지?</a></h2>
+						<p class="collapsibleContent">
+							개인파산 신청 후 면책을 받게 되면 파산자는 자동으로 복권이 됩니다. 
+							그러면 아무런 문제없이 은행거래가 가능하며 개인사업자 등록을 하는데도 문제가 되지 않는 등 공·사법상 활동에 제약이 없기에 자녀에게 피해가 가지 않습니다.
+						</p>
+					</li>				
+				</ul><!-- collapsibleWrap end -->
 			</div>
 		</div>
 	</section>

@@ -39,6 +39,9 @@
 	.topImg > img{
 		width:100%;
 	}
+	.pcTopImg{
+		display:none;
+	}
 	.sideMenu, .callInfo{
 		display:none;
 	}
@@ -146,16 +149,22 @@
 		text-align: left;
 	}
 	.selected{
-		text-decoration: underline;
+		text-decoration: underline !important;
 		font-weight: bold;
+		color:#5c5c5c !important;
 	}
 }
 @media only screen and (min-width:767px) and (max-width:1099px){
+	body{
+		position: relative;
+	}
 	header{
 		width:100%;
 		min-width:767px;
-		height:95px;
-		position: relative; 
+		/* height:95px; */
+		background: #033c60;
+		position: absolute;
+		top:0; 
 		z-index: 99;
 	}
 	section{
@@ -169,9 +178,13 @@
 	}
 	.topImg{
 		width:100%;
+		padding-top:98px;
 	}
 	.topImg > img{
 		width:100%;
+	}
+	.mTopImg{
+		display:none;
 	}
 	.contentWrap{
 		width:767px;
@@ -292,16 +305,22 @@
 		text-align: left;
 	}
 	.selected{
-		text-decoration: underline;
+		text-decoration: underline !important;
 		font-weight: bold;
+		color:#5c5c5c !important;
 	}
 }
 @media only screen and (min-width:1100px){
+	body{
+		position: relative;
+	}
 	header{
 		width:100%;
 		min-width:1100px;
-		height:115px;
-		position: relative; 
+		/* height:115px; */
+		background: #033c60;
+		position: absolute;
+		top:0; 
 		z-index: 99;
 	}
 	section{
@@ -315,9 +334,13 @@
 	}
 	.topImg{
 		width:100%;
+		padding-top:115px;
 	}
 	.topImg > img{
 		width:100%;
+	}
+	.mTopImg{
+		display:none;
 	}
 	.contentWrap{
 		width:1100px;
@@ -452,19 +475,21 @@
 		text-align: left;
 	}
 	.selected{
-		text-decoration: underline;
+		text-decoration: underline !important;
 		font-weight: bold;
+		color:#5c5c5c !important;
 	}
 }
 </style>
 </head>
 <body>
 	<header>
-		<jsp:include page="../include/pcHeader.jsp"></jsp:include>
+		<jsp:include page="../include/pcHeaderTest.jsp"></jsp:include>
 	</header>
 	<section>
 		<div class="topImg">
-			<img src="${pageContext.request.contextPath}/resources/images/menu05TopImg.png">
+			<img class="pcTopImg" src="${pageContext.request.contextPath}/resources/images/menu05TopImg.png">
+			<img class="mTopImg" src="${pageContext.request.contextPath}/resources/images/mMenu05TopImg.png">
 		</div>
 		<div class="contentWrap">
 			<div class="sideMenuWrap">
@@ -473,7 +498,7 @@
 					<ul class="sideMenuUl"> 
 						<li><a href="${pageContext.request.contextPath}/menu05_1">개인회생질문</a></li>
 						<li><a href="${pageContext.request.contextPath}/menu05_2">개인파산질문</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu05_3">민사질문</a></li>
+						<%-- <li><a href="${pageContext.request.contextPath}/menu05_3">민사질문</a></li> --%>
 					</ul>
 				</div><!-- sideMenu end -->
 				<div class="callInfo">
@@ -501,7 +526,7 @@
 							<a href="#none">개인회생질문<img class="btnArrow" src="${pageContext.request.contextPath}/resources/images/down_arrow.png"></a>
 							<ul class="sub_subDropdown">
 								<li><a href="${pageContext.request.contextPath}/menu05_2">개인파산질문</a></li>
-								<li><a href="${pageContext.request.contextPath}/menu05_3">민사질문</a></li>
+								<%-- <li><a href="${pageContext.request.contextPath}/menu05_3">민사질문</a></li> --%>
 							</ul>	
 						</li>
 					</ul>

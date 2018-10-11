@@ -38,6 +38,9 @@
 	.topImg > img{
 		width:100%;
 	}
+	.pcTopImg{
+		display:none;
+	}
 	.sideMenu, .callInfo{
 		display:none;
 	}
@@ -118,11 +121,16 @@
 	}
 }
 @media only screen and (min-width:767px) and (max-width:1099px){
+	body{
+		position: relative;
+	}
 	header{
 		width:100%;
 		min-width:767px;
-		height:95px;
-		position: relative; 
+		/* height:95px; */
+		background: #033c60;
+		position: absolute;
+		top:0; 
 		z-index: 99;
 	}
 	section{
@@ -136,9 +144,13 @@
 	}
 	.topImg{
 		width:100%;
+		padding-top:98px;
 	}
 	.topImg > img{
 		width:100%;
+	}
+	.mTopImg{
+		display:none;
 	}
 	.contentWrap{
 		width:767px;
@@ -231,11 +243,16 @@
 	}
 }
 @media only screen and (min-width:1100px){
+	body{
+		position: relative;
+	}
 	header{
 		width:100%;
 		min-width:1100px;
-		height:115px;
-		position: relative; 
+		/* height:115px; */
+		background: #033c60;
+		position: absolute;
+		top:0; 
 		z-index: 99;
 	}
 	section{
@@ -249,9 +266,13 @@
 	}
 	.topImg{
 		width:100%;
+		padding-top:115px;
 	}
 	.topImg > img{
 		width:100%;
+	}
+	.mTopImg{
+		display:none;
 	}
 	.contentWrap{
 		width:1100px;
@@ -362,11 +383,12 @@
 </head>
 <body>
 	<header>
-		<jsp:include page="../include/pcHeader.jsp"></jsp:include>
+		<jsp:include page="../include/pcHeaderTest.jsp"></jsp:include>
 	</header>
 	<section>
 		<div class="topImg">
-			<img src="${pageContext.request.contextPath}/resources/images/menu01TopImg.png">
+			<img class="pcTopImg" src="${pageContext.request.contextPath}/resources/images/menu01TopImg.png">
+			<img class="mTopImg" src="${pageContext.request.contextPath}/resources/images/mMenu01TopImg.png">
 		</div>
 		<div class="contentWrap">
 			<div class="sideMenuWrap">
