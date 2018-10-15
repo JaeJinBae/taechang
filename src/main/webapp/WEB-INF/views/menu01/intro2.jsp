@@ -383,7 +383,7 @@
 </head>
 <body>
 	<header>
-		<jsp:include page="../include/pcHeaderTest.jsp"></jsp:include>
+		<jsp:include page="../include/pcHeader.jsp"></jsp:include>
 	</header>
 	<section>
 		<div class="topImg">

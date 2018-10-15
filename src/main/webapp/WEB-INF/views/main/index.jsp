@@ -538,7 +538,7 @@
 </head>
 <body id="main">
 	<header>
-		<jsp:include page="../include/pcHeaderTest.jsp"></jsp:include>
+		<jsp:include page="../include/pcHeader.jsp"></jsp:include>
 	</header>
 	<div class="mainSlider">
 		<div class="mainBanner pcMainBanner">

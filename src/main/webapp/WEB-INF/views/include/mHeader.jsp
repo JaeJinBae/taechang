@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <style>
+	.menuBg{display:none;position:fixed;top:0px;left:0px;background-color:rgba(0, 0, 0, 0.8);width:100%;height:100%;z-index:1;}
 	.headerWrap2{
 		width:100%;
 		text-align: center;
@@ -28,11 +29,11 @@
 	}
 	.sidenav {
 	    height: 100%; /* 100% Full-height */
-	    width: 0; /* 0 width - change this with JavaScript */
+	    width: 250px; /* 0 width - change this with JavaScript */
 	    position: fixed; /* Stay in place */
 	    z-index: 1; /* Stay on top */
 	    top: 0; /* Stay at the top */
-	    right: 0;
+	    right: -250px;
 	    background: #f2f2f2;
 	    overflow-x: hidden; /* Disable horizontal scroll */
 	    padding-top: 40px; /* Place content 60px from the top */
@@ -71,20 +72,17 @@
 	}
 	.sidenav .mainMenu > li{
 		/* margin-bottom:13px; */
-		border-bottom:1px solid #363636;
+		border-bottom:1px solid #444;
 		text-align: left;
 	}
 	.sidenav .mainMenu > li > p {
 	    padding: 13px 8px 13px 20px;
 	    text-decoration: none;
 	    font-size: 16px;
-	    color: #363636;
+	    color: #444;
 	    display: block;
 	    transition: 0.3s;
 	    font-weight:600;
-	}
-	.sidenav .mainMenu > li:first-child > p{
-		border-top:1px solid #363636;
 	}
 	.sidenav .mainMenu > li > p > img{
 		width:20px;
@@ -108,11 +106,6 @@
 		font-size:15px;
 		color:#fff;
 	}
-	/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-	/* #main {
-	    transition: margin-right .5s;
-	    padding: 20px;
-	} */
 	.mCallInfo{
 		width:100%;
 		border:1px solid lightgray;
@@ -152,14 +145,18 @@
 	// sideNavBar
 	function openNav() {
 	    document.getElementById("mySidenav").style.width = "250px";
-	    document.getElementById("main").style.marginRight = "250px";
-	    document.body.style.backgroundColor = "rgba(54,39,25,0.4)";
+	    document.getElementById("mySidenav").style.right = "0px";
 	}
 	function closeNav() {
-	    document.getElementById("mySidenav").style.width = "0";
+	    document.getElementById("mySidenav").style.right = "-250px";
 	    document.getElementById("main").style.marginRight = "0";
-	    document.body.style.backgroundColor = "white";
 	}
+	 $(function(openNav){
+		$(".menuBg").css({"display":"block"});
+    })
+    $(function(closeNav){
+		$(".menuBg").css({"display":"none"});
+    })
 	
 	$(function(){
 		var arr=[0, 0, 0, 0, 0, 0];
@@ -180,74 +177,74 @@
 	});	
 </script>
 <div class="headerWrap2"><!-- mobileMenu.png -->
-	<a class="logo" href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/images/logo.png"></a>
-	<p class="menuIcon" onclick="openNav()"><img src="${pageContext.request.contextPath}/resources/images/mobileMenu.png"></p>
-	<div id="mySidenav" class="sidenav">
-		<a class="homeBtn" href="${pageContext.request.contextPath}/">
-			<img src="${pageContext.request.contextPath}/resources/images/mobileHomeIcon.png">
-			<span>홈으로</span>
-		</a>
-		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<hr>
-		<ul class="mainMenu">
-			<li>
-				<p>태창소개 <img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
-				<div class="subMenu">
-					<ul class="subNavUl">
-						<li><a href="${pageContext.request.contextPath}/menu01_1">- 인사말</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu01_2">- 운영방침</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu01_3">- 오시는 길</a></li>
+				<a class="logo" href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/images/logo.png"></a>
+				<p class="menuIcon" onclick="openNav()"><img src="${pageContext.request.contextPath}/resources/images/mobileMenu.png"></p>
+				<div class="menuBg"></div>
+				<div id="mySidenav" class="sidenav">
+					<a class="homeBtn" href="${pageContext.request.contextPath}/">
+						<img src="${pageContext.request.contextPath}/resources/images/mobileHomeIcon.png">
+						<span>홈으로</span>
+					</a>
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<hr>
+					<ul class="mainMenu">
+						<li>
+							<p>태창소개 <img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
+							<div class="subMenu">
+								<ul class="subNavUl">
+									<li><a href="${pageContext.request.contextPath}/menu01_1">- 인사말</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu01_2">- 운영방침</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu01_3">- 오시는 길</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<p>개인회생<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
+							<div class="subMenu">
+								<ul class="subNavUl">
+									<li><a href="${pageContext.request.contextPath}/menu02_1">- 개인회생이란</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu02_2">- 개인회생절차</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu02_3">- 개인회생서류</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<p>개인파산<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
+							<div class="subMenu">
+								<ul class="subNavUl">
+									<li><a href="${pageContext.request.contextPath}/menu03_1">- 개인파산이란</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_2">- 개인파산절차</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu03_2">- 개인파산서류</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<p>민사<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
+							<div class="subMenu">
+								<ul class="subNavUl">
+									<li><a href="${pageContext.request.contextPath}/menu04_1">- 민사소송이란</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu04_2">- 민사진행절차</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<p>자주하는질문<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
+							<div class="subMenu">
+								<ul class="subNavUl">
+									<li><a href="${pageContext.request.contextPath}/menu05_1">- 개인회생질문</a></li>
+									<li><a href="${pageContext.request.contextPath}/menu05_2">- 개인파산질문</a></li>
+								</ul>
+							</div>
+						</li>
 					</ul>
+					<div class="mCallInfo">
+						<h4 class="mCallInfoTitle" id="mCallInfoTitle">상담센터</h4>
+						<h3>1877 - 0757</h3>
+						<h3 class="secondChild">053-745-1332</h3>
+						<h5>Fax. 053-751-1696</h5>
+						<h5>E-mail. tc119@naver.com</h5>
+						<h4 class="mCallInfoTitle">운영시간</h4>
+						<h5>AM 09:00<span class="blank"> ~ PM 06:00</span></h5>
+					</div><!-- callInfo end -->
 				</div>
-			</li>
-			<li>
-				<p>개인회생<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
-				<div class="subMenu">
-					<ul class="subNavUl">
-						<li><a href="${pageContext.request.contextPath}/menu02_1">- 개인회생이란</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu02_2">- 개인회생절차</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu02_3">- 개인회생서류</a></li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<p>개인파산<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
-				<div class="subMenu">
-					<ul class="subNavUl">
-						<li><a href="${pageContext.request.contextPath}/menu03_1">- 개인파산이란</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu03_2">- 개인파산절차</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu03_2">- 개인파산서류</a></li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<p>민사<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
-				<div class="subMenu">
-					<ul class="subNavUl">
-						<li><a href="${pageContext.request.contextPath}/menu04_1">- 민사소송이란</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu04_2">- 민사진행절차</a></li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<p>자주하는질문<img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
-				<div class="subMenu">
-					<ul class="subNavUl">
-						<li><a href="${pageContext.request.contextPath}/menu05_1">- 개인회생질문</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu05_2">- 개인파산질문</a></li>
-						<%-- <li><a href="${pageContext.request.contextPath}/menu05_3">- 민사질문</a></li> --%>
-					</ul>
-				</div>
-			</li>
-		</ul>
-		<div class="mCallInfo">
-			<h4 class="mCallInfoTitle" id="mCallInfoTitle">상담센터</h4>
-			<h3>1877 - 0757</h3>
-			<h3 class="secondChild">053-745-1332</h3>
-			<h5>Fax. 053-751-1696</h5>
-			<h5>E-mail. tc119@naver.com</h5>
-			<h4 class="mCallInfoTitle">운영시간</h4>
-			<h5>AM 09:00<span class="blank"> ~ PM 06:00</span></h5>
-		</div><!-- callInfo end -->
-	</div>
-</div>
+			</div>

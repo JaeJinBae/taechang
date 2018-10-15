@@ -13,64 +13,71 @@
 	.mHeaderWrap{
 		display:none;
 	}
+	.mHeaderWrap{
+		display:none;
+	}
 	.headerWrap{
 		width:100%;
+		position: relative;
+	}
+	.whiteBack{
+		width:100%;
+		height:95px;
+		background: #fff;
+		position: absolute;
+		top:0;
+		z-index: 99;
 	}
 	.mainMenuWrap{
 		width:767px;
-		height:95px;
 		margin:0 auto;
 		overflow:hidden;
-	}
-	.mainLogo{
-		width:220px;
-		float:left;
-		margin-top:22px;
-		margin-left:10px;
-	}
-	.mainLogo > a{
-		width:100%;
-	}
-	.mainLogo > a > img{
-		width:100%;
+		position: relative;
+		z-index: 999;
 	}
 	.mainMenuUl{
-		width:465px;
-		float:right;
+		width:100%;
 		overflow:hidden;
-		text-align: right;
-		margin-right:15px;
 	}
 	.mainMenuUl > li{
 		float:left;
 		width:93px;
-		height:95px;
 		text-align: center;
 		padding-top:38px;
 	}
 	.mainMenuUl > li > a{
+		display:block;
 		font-size:16px;
 		font-weight:600;
+		margin-bottom:40px;
+		color: #5E5E5E;
 	}
-	.mainMenuUl > li:hover{
-		border-bottom:4px solid red;
-	} 
+	.mainMenuUl > li:first-child{
+		width:290px;
+		padding-top:23px;
+	}
+	.logoDiv{
+		width:220px;
+		text-align: left;
+		margin-bottom:23px;
+		margin-left:10px;
+	}
+	.logoWrap > .logoDiv > a{
+		display:block;
+		width:220px;
+	}
+	.logoWrap > .logoDiv > a > img{
+		width:100%;
+	}
+	.mainMenuUl > li:hover > a{
+		color:black;
+	}
 	.subMenuWrap{
 		display:none;
 		width:100%;
-		background: #033c60;
+		padding-top:10px;
+/*		background: #033c60;*/
 	}
-	.displayBlock{
-		display:block;
-		transition-property:all;
-		transition-duration:1s;
-	}
-	.subMenuContentWrap{
-		width:767px;
-		margin:0 auto;
-		overflow:hidden;
-		padding:23px 0;
-	} 
 	.subMenuCallInfo{
 		float:left;
 		margin:10px;
@@ -94,22 +101,18 @@
 		color:#ff6d00;
 		font-size:25px;
 	}
-	.subMenuUlWrap{
-		float:right;
-		margin-right:15px;
-	}
 	.subMenuUl{
-		float:left;
-		width:93px;
-		text-align: center;
+		padding:23px 0;
 	}
 	.subMenuUl > li{
-		/* padding:15px 0; */
-		padding-bottom:25px;
+		margin-bottom:25px;
 	}
 	.subMenuUl > li > a{
 		font-size:14px;
 		color:#e1e1e1;
+	}
+	.subMenuUl > li > a:hover{
+		font-weight:bold !important;
 	}
 }
 @media only screen and (min-width:1100px){
@@ -118,63 +121,67 @@
 	}
 	.headerWrap{
 		width:100%;
+		position: relative;
+	}
+	.whiteBack{
+		width:100%;
+		height:115px;
+		background: #fff;
+		position: absolute;
+		top:0;
+		z-index: 99;
 	}
 	.mainMenuWrap{
 		width:1100px;
-		height:115px;
 		margin:0 auto;
 		overflow:hidden;
-	}
-	.mainLogo{
-		width:300px;
-		float:left;
-		margin-top:22px;
-	}
-	.mainLogo > a{
-		width:100%;
-	}
-	.mainLogo > a > img{
-		width:100%;
+		position: relative;
+		z-index: 999;
 	}
 	.mainMenuUl{
-		width:600px;
-		float:right;
+		width:100%;
 		overflow:hidden;
-		text-align: right;
 	}
 	.mainMenuUl > li{
 		float:left;
 		width:120px;
-		height:114px;
 		text-align: center;
 		padding-top:45px;
 	}
 	.mainMenuUl > li > a{
+		display:block;
 		font-size:20px;
 		font-weight:600;
+		margin-bottom:47px;
+		color: #5E5E5E;
 	}
-	.mainMenuUl > li:hover{
-		border-bottom:4px solid red;
-	} 
+	.mainMenuUl > li:first-child{
+		width:500px;
+		padding-top:24px;
+	}
+	.logoDiv{
+		width:500px;
+		text-align: left;
+		margin-bottom:23px;
+	}
+	.logoWrap > a{
+		display:block;
+		width:300px;
+	}
+	.logoWrap > a > img{
+		width:100%;
+	}
+	.mainMenuUl > li:hover > a{
+		color:black;
+	}
 	.subMenuWrap{
 		display:none;
 		width:100%;
-		background: #033c60;
+		padding-top:10px;
 	}
-	.displayBlock{
-		display:block;
-		transition-property:all;
-		transition-duration:1s;
-	}
-	.subMenuContentWrap{
-		width:1100px;
-		margin:0 auto;
-		overflow:hidden;
-		padding:23px 0;
-	} 
 	.subMenuCallInfo{
 		float:left;
-		margin:20px;
+		margin:35px 15px;
 		text-align: center;
 	}
 	.subMenuCallInfo > p{
@@ -194,118 +201,113 @@
 		font-weight: bold;
 		color:#ff6d00;
 	}
-	.subMenuUlWrap{
-		float:right;
-	}
 	.subMenuUl{
-		float:left;
-		width:120px;
-		text-align: center;
+		padding:23px 0;
 	}
 	.subMenuUl > li{
-		/* padding:15px 0; */
-		padding-bottom:25px;
+		margin-bottom:25px;
 	}
 	.subMenuUl > li > a{
 		font-size:17px;
 		color:#e1e1e1;
 	}
+	.subMenuUl > li > a:hover{
+		font-weight:bold !important;
+	}
 }
 </style>
 <script>
 	$(function(){
-		var menuNum = 0;
-		$(".mainMenuUl").hover(function(){
-			menuNum++;
-			subMenuDisplayFunc(menuNum);
-			console.log(menuNum);
-		},function(){
-			menuNum--;
-			if(menuNum < 0){
-				console.log(menuNum + "mainMenu out");
-				subMenuDisplayFunc(menuNum);
-			}
-		});
-		
-		$(".subMenuWrap").hover(function(){
-			menuNum++;
-			//subMenuDisplayFunc(menuNum);
-			console.log(menuNum);
-		},function(){
-			menuNum--;
-			console.log(menuNum);
-			subMenuDisplayFunc(menuNum);
-		});
+		$(".mainMenuUl>li>a.mMenu").mouseenter(function(){
+            $(".subMenuWrap").stop(true,true).slideDown();
+        });
+        $(".mainMenuUl").mouseleave(function(){
+            $(".subMenuWrap").stop(true,true).slideUp();
+        });
+        $(".logoDiv").mouseenter(function(){
+            $(".subMenuWrap").stop(true,true).slideUp();
+        });
+        $(".menuIcon").click(function(){
+            $(".menuBg").css({"display":"block"});
+        });
+        $(".closebtn").click(function(){
+            $(".menuBg").css({"display":"none"});
+        });
 	});
 	
-	function subMenuDisplayFunc(state){
-		if(state > 0){
-			$(".subMenuWrap").slideDown("fast");
-		}else if(state <= 0){
-			$(".subMenuWrap").slideUp("fast");
-		}
-	}
 </script>
 <body>
 	<div class="headerWrap">
+		<div class="whiteBack">
+		
+		</div>
 		<div class="mainMenuWrap">
-			<div class="mainLogo">
-				<a href="${pageContext.request.contextPath}/"><img src="${pageContext.request.contextPath}/resources/images/logo.png"></a>
-			</div>
 			<ul class="mainMenuUl">
-				<li>
-					<a href="#none">태창소개</a>
+				<li class="logoWrap">
+					<div class="logoDiv">
+						<a href="${pageContext.request.contextPath}/">
+							<img src="${pageContext.request.contextPath}/resources/images/logo.png">
+						</a>
+					</div>
+					<div class="subMenuWrap">
+						<div class="subMenuCallInfo">
+						<p>개인회생/개인파산/민사 똑같다고 생각 마세요.</p>
+						<p>여러분의 최고 파트너 <span id="bigtxt">태창</span>의 문을 두드리세요.</p>
+						<h1>1877-0757</h1>
+						<h1>053-745-1332</h1>
+					</div><!-- subMenuCallInfo -->
+					</div>
 				</li>
 				<li>
-					<a href="#none">개인회생</a>
+					<a class="mMenu" href="#none">태창소개</a>
+					<div class="subMenuWrap">
+						<ul class="subMenuUl">
+							<li><a href="${pageContext.request.contextPath}/menu01_1">인사말</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu01_2">운영방침</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu01_3">오시는 길</a></li>
+						</ul>
+					</div>
 				</li>
 				<li>
-					<a href="#none">개인파산</a>
+					<a class="mMenu" href="#none">개인회생</a>
+					<div class="subMenuWrap">
+						<ul class="subMenuUl">
+							<li><a href="${pageContext.request.contextPath}/menu02_1">개인회생이란</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu02_2">개인회생절차</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu02_3">개인회생서류</a></li>
+						</ul>
+					</div>
 				</li>
 				<li>
-					<a href="#none">민사</a>
+					<a class="mMenu" href="#none">개인파산</a>
+					<div class="subMenuWrap">
+						<ul class="subMenuUl">
+							<li><a href="${pageContext.request.contextPath}/menu03_1">개인파산이란</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu03_2">개인파산절차</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu03_3">개인파산서류</a></li>
+						</ul>
+					</div>
 				</li>
 				<li>
-					<a href="#none">자주하는질문</a>
+					<a class="mMenu" href="#none">민사</a>
+					<div class="subMenuWrap">
+						<ul class="subMenuUl">
+							<li><a href="${pageContext.request.contextPath}/menu04_1">민사소송이란</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu04_2">민사진행절차</a></li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a class="mMenu" href="#none">자주하는질문</a>
+					<div class="subMenuWrap">
+						<ul class="subMenuUl">
+							<li><a href="${pageContext.request.contextPath}/menu05_1">개인회생질문</a></li>
+							<li><a href="${pageContext.request.contextPath}/menu05_2">개인파산질문</a></li>
+						</ul>
+					</div>
 				</li>
 			</ul>
 		</div><!-- mainMenuWrap end -->
-		<div class="subMenuWrap">
-			<div class="subMenuContentWrap">
-				<div class="subMenuCallInfo">
-					<p>개인회생/개인파산/민사 똑같다고 생각 마세요.</p>
-					<p>여러분의 최고 파트너 <span id="bigtxt">태창</span>의 문을 두드리세요.</p>
-					<h1>1877-0757</h1>
-					<h1>053-745-1332</h1>
-				</div><!-- subMenuCallInfo -->
-				<div class="subMenuUlWrap">
-					<ul class="subMenuUl">
-						<li><a href="${pageContext.request.contextPath}/menu01_1">인사말</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu01_2">운영방침</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu01_3">오시는 길</a></li>
-					</ul>
-					<ul class="subMenuUl">
-						<li><a href="${pageContext.request.contextPath}/menu02_1">개인회생이란</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu02_2">개인회생절차</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu02_3">개인회생서류</a></li>
-					</ul>
-					<ul class="subMenuUl">
-						<li><a href="${pageContext.request.contextPath}/menu03_1">개인파산이란</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu03_2">개인파산절차</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu03_3">개인파산서류</a></li>
-					</ul>
-					<ul class="subMenuUl">
-						<li><a href="${pageContext.request.contextPath}/menu04_1">민사소송이란</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu04_2">민사진행절차</a></li>
-					</ul>
-					<ul class="subMenuUl">
-						<li><a href="${pageContext.request.contextPath}/menu05_1">개인회생질문</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu05_2">개인파산질문</a></li>
-						<li><a href="${pageContext.request.contextPath}/menu05_3">민사질문</a></li>
-					</ul>
-				</div>
-			</div><!-- subMenuContentWrap -->
-		</div><!-- subMenuWrap -->
 	</div><!-- headerWrap end -->
 	<div class="mHeaderWrap">
 		<jsp:include page="mHeader.jsp"></jsp:include>

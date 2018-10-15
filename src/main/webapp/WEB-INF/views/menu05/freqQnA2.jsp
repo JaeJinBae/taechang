@@ -484,7 +484,7 @@
 </head>
 <body>
 	<header>
-		<jsp:include page="../include/pcHeaderTest.jsp"></jsp:include>
+		<jsp:include page="../include/pcHeader.jsp"></jsp:include>
 	</header>
 	<section>
 		<div class="topImg">
@@ -535,71 +535,71 @@
 			<div class="content">
 				<ul class="collapsibleWrap">
 					<li class="collapsible">
-						<h2 class="collapsible_title"><a href="#none">Q. 개인파산은 소득이 전혀 없는 채무자만 신청할 수 있는지?</a></h2>
+						<h2 class="collapsible_title"><a href="#none">Q. 소득이 전혀 없는 채무자만 개인파산을 신청할 수 있나요?</a></h2>
 						<p class="collapsibleContent">
-							채무자가 소득이 없거나 소득이 있다고 하더라도 최저생활을 할 수 있는 수준의 소득만 있다면 개인파산을 신청할 수 있습니다.
+							개인파산은 채무자가 소득이 없거나 소득이 있다고 하더라도 최저생활을 할 수 있는 수준의 소득만 있다면 신청할 수 있습니다.
 						</p>
 					</li>
 					<li class="collapsible">
-						<h2 class="collapsible_title"><a href="#">Q. 최저생계비는 어떻게 산정하는지?</a></h2>
+						<h2 class="collapsible_title"><a href="#">Q. 최저생계비는 어떻게 산정하나요?</a></h2>
 						<p class="collapsibleContent">
 							  최저생계비는 채무자 개인 또는 생계를 함께 하는 가족들이 일상생활을 하는데 소요되는 최소한의 생활비를 국가에서 정하는 것으로, 보건복지부에서 매년 고시하고 있습니다.
 							  법원에서는 이 고시를 기준으로 150%의 범위 내에서 생계비를 인정하는 편입니다.
 						</p>
 					</li>
 					<li class="collapsible">
-						<h2 class="collapsible_title"><a href="#">Q. 파산신청 후 취업이 가능한지?</a></h2>
+						<h2 class="collapsible_title"><a href="#">Q. 파산신청 후 취업이 가능한가요?</a></h2>
 						<p class="collapsibleContent">
-							파산을 신청한 후에도 취업이 가능하며, 소득활동을 할 수 있습니다. 면책을 받은 후에도 불이익은 없습니다.
+							파산신청 후에도 취업이 가능하고 소득활동을 할 수 있으며 면책을 받은 후에도 불이익은 없습니다.
 						</p>
 					</li>
 					<li class="collapsible">
-						<h2 class="collapsible_title"><a href="#">Q. 파산을 신청할 수 있는 채무의 한계 및 종류는?</a></h2>
+						<h2 class="collapsible_title"><a href="#">Q. 파산을 신청할 수 있는 채무의 한계 및 종류는 무엇이 있나요?</a></h2>
 						<p class="collapsibleContent">
 							인파산의 경우 부채의 한도는 없고, 채무의 종류 역시 제한이 없으므로 금융권 채무 뿐 아니라 개인간의 채무, 휴대폰요금 등도 면책이 가능합니다.
 						</p>
 					</li>
 					<li class="collapsible">
-						<h2 class="collapsible_title"><a href="#">Q. 신청에서 면책까지 소요되는 기간?</a></h2>
+						<h2 class="collapsible_title"><a href="#">Q. 파산신청에서 면책까지 얼마나 걸리나요?</a></h2>
 						<p class="collapsibleContent">
-							채무자 개인별로 다르기는 하지만 대부분 6개월에서 1년 사이에 절차가 완료됩니다. 
-							다만 절차 진행 도중 법원의 보정명령 등에 불응하는 등 채무자의 비협조로 절차가 지연되면 그만큼 처리기간도 늘어납니다.
+							채무자별로 다르기는 하지만 대부분 6개월에서 1년 사이에 절차가 완료됩니다. 
+							하지만 절차 진행 도중 법원의 보정명령 등에 불응하는 등 채무자의 비협조로 절차가 지연되면 그만큼 처리기간도 늘어납니다.
 						</p>
 					</li>
 					<li class="collapsible">
-						<h2 class="collapsible_title"><a href="#">Q. 면책되지 않는 채권은 어떤 것인지?</a></h2>
+						<h2 class="collapsible_title"><a href="#">Q. 채권 중 면책이 되지 않는것에는 어떤것이 있나요?</a></h2>
 						<p class="collapsibleContent">
-							조세채권, 벌금, 추징금, 과태료, 채무자의 불법행위로 인한 손해배상금 등은 면책이 되지 않으므로 유의하여야 합니다.
+							조세채권, 벌금, 추징금, 과태료, 채무자의 불법행위로 인한 손해배상금 등은 면책이 되지 않습니다.
 						</p>
 					</li>
 					<li class="collapsible">
-						<h2 class="collapsible_title"><a href="#">Q. 변호사나 법무사 조력없이 혼자 진행할 수 있는지?</a></h2>
+						<h2 class="collapsible_title"><a href="#">Q. 법무사나 변호사의 도움없이 혼자  파산진행을 할 수 있나요?</a></h2>
 						<p class="collapsibleContent">
-							혼자 진행하는 것도 가능합니다. 다만 신청서를 제출한 이후에도 법원에서 수시로 보정을 요구하는데 이에 제대로 대응하지 못하면 기각될 확률이 높고, 다시 새롭게 절차를 진행해야 되므로 그만큼 시일이 오래 걸리는 불이익이 있습니다. 
+							가능합니다. 다만 신청서를 제출한 이후에도 법원에서 수시로 보정을 요구하는데 이에 제대로 대응하지 못하면 기각될 확률이 높고, 다시 새롭게 절차를 진행해야 되므로 그만큼 시일이 오래 걸리는 불편함이 있을 수 있습니다. 
 						</p>
 					</li>
 					<li class="collapsible">
-						<h2 class="collapsible_title"><a href="#">Q. 파산하면 은행거래가 불가능한지?</a></h2>
+						<h2 class="collapsible_title"><a href="#">Q. 파산하면 은행거래가 불가능한가요?</a></h2>
 						<p class="collapsibleContent">
-							파산해도 통장개설은 가능합니다. 다만 채무자 명의로 대출이 불가능할 것입니다.
+							파산을해도 통장개설은 가능합니다. 다만 채무자 명의로 대출이 불가능할 것 입니다.
 							또한 파산신청후 아직 면책을 받지 않았다면 채권자의 강제집행 염려 때문에 대부분 금융권에 예금을 개설하지 않는 경우가 많습니다.
 						</p>
 					</li>
 					<li class="collapsible">
-						<h2 class="collapsible_title"><a href="#">Q. 은행에서 민사소송을 걸어 비용을 부담하겠다는 통지가 온 경우?</a></h2>
+						<h2 class="collapsible_title"><a href="#">Q. 은행에서 민사소송을 걸어 비용을 부담하겠다는 통지가 온 경우는 어떻게 해야하나요?</a></h2>
 						<p class="collapsibleContent">
 							소장이나 지급명령결정문이 법원으로부터 온다면 채무액을 확인한 후 이에 대해 답변서나 이의신청서를 제출해야 합니다.
 						</p>
 					</li>
 					<li class="collapsible">
-						<h2 class="collapsible_title"><a href="#">Q. 법원예납금을 납부하지 않는다면?</a></h2>
+						<h2 class="collapsible_title"><a href="#">Q. 법원예납금을 납부하지 않는다면 어떻게되나요?</a></h2>
 						<p class="collapsibleContent">
 							파산을 신청한 이후 법원에서는 파산관재인 보수 등과 같은 비용을 예납하도록 안내하고 있습니다. 
 							이에 불응하여 납부하지 않는다면 법원에서는 파산신청에 대해 기각결정을 내립니다.
 						</p>
 					</li>
 					<li class="collapsible">
-						<h2 class="collapsible_title"><a href="#">Q. 부모가 개인파산을 신청하게 되면 자녀에게 피해가 가는지?</a></h2>
+						<h2 class="collapsible_title"><a href="#">Q. 부모가 개인파산을 신청하게 되면 자녀에게 피해가 가나요?</a></h2>
 						<p class="collapsibleContent">
 							개인파산 신청 후 면책을 받게 되면 파산자는 자동으로 복권이 됩니다. 
 							그러면 아무런 문제없이 은행거래가 가능하며 개인사업자 등록을 하는데도 문제가 되지 않는 등 공·사법상 활동에 제약이 없기에 자녀에게 피해가 가지 않습니다.

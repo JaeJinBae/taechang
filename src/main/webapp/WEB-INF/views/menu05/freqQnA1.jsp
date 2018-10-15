@@ -484,7 +484,7 @@
 </head>
 <body>
 	<header>
-		<jsp:include page="../include/pcHeaderTest.jsp"></jsp:include>
+		<jsp:include page="../include/pcHeader.jsp"></jsp:include>
 	</header>
 	<section>
 		<div class="topImg">
@@ -534,105 +534,105 @@
 			</div><!-- sideMenuWrap end -->
 			<div class="content">
 				<ul class="collapsibleWrap">
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 채무자의 채무액수가 금액 제한이 있는지?</a></h2>
-					<p class="collapsibleContent">
-						금액이 너무 작으면 벌어서 갚을 수 있다고 볼 수 있기 때문에 대부분 2천만원 이상의 경우	신청해왔습니다. 하지만 상황마다 다를 수 있습니다. 
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 소득의 액수가 어느 정도 있어야만 할 수 있는지?</a></h2>
-					<p class="collapsibleContent">
-						  보건복지부 기준 최저생계비 이상의 소득이 있어야만 개인회생 신청이 가능합니다. 보건복지부	기준 최저생계비보다 소득이 적은 분들은 개인회생절차는 진행이 어렵고 파산면책을 검토해야 합니다.  
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 최저 생계비를 소액 넘는 소득만 있어도 신청이 가능한지?</a></h2>
-					<p class="collapsibleContent">
-						경우에 따라 조금씩 다르지만 대부분 가능합니다.  
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 자녀가 성년이 된 경우 이 자녀도 부양가족에 포함이 가능한지?</a></h2>
-					<p class="collapsibleContent">
-						부양가족은 미성년 자녀에게만 해당이 되는 사항입니다. 다만 성년의 자녀라고 해도 장애가 있거나 질병이 있어 가족의 보호 및 부양이 필요한 경우는 인정됩니다.
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 부모님도 부양가족에 포함이 가능한지?</a></h2>
-					<p class="collapsibleContent">
-						부모님은 만 60세 이상 부양가족으로 신청이 가능합니다. 단, 60세 미만의 부모님이라 하더라도 질병 또는 장애로 가족의 보호와 부양이 필요한 경우 부양가족으로 인정되며, 
-						60세 이상이라 해도 소득이 있으시거나 어느 정도 이사의 재산을 보유하고 계시다면 부양가족에 포함시킬 수 없습니다.
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 배우자도 부양가족에 포함이 가능한지?</a></h2>
-					<p class="collapsibleContent">
-						배우자는 경우에 따라 다릅니다. 미취학 아동이 있는 경우나, 취업이 불가능한 사유를 소명할 수 있다면 부양가족으로 포함이 가능합니다.
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 배우자가 임대보증금이 있으면 개인회생이 불가능 한지?</a></h2>
-					<p class="collapsibleContent">
-						직접적인 관련은 없습니다. 다만 배우자 임대보증금의 저반 액수와 채무자의 재산을 합한 금액보다 변제계획안의 총 변제액이 더 커야 합니다.  
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 채무액수의 한도는 있는지?</a></h2>
-					<p class="collapsibleContent">
-						무담보채무액수는 5억원 이하인 경우만 가능하고 담보채무액수는 10억원 이하인 경우에만 가능합니다. 
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 도박을 한 경우 또는 주식투자에 실패한 경우도 개인회생을 할 수 있는지?</a></h2>
-					<p class="collapsibleContent">
-						상황에 따라 다르지만 가능 할 수도 있습니다. 
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 부동산을 소유하고 있으면 개인회생을 할 수 없는지?</a></h2>
-					<p class="collapsibleContent">
-						가능합니다. 다만 개인회생 요건 검토가 사전에 필요합니다. 즉, 재산보다 빚이 많아야 하고 변제 계획안의 변제총액이 가지고 있는 재산보다 많아야 합니다. 구체적인 상담을 해봐야 개인회생 가능성에 대해 자세히 알아볼 수 있습니다. 
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 취직해서 월급을 받은지 1개월 밖에 되지 않아도 개인회생이 가능한지?</a></h2>
-					<p class="collapsibleContent">
-						가능하지만 계속하여 근무를 할 것인지에 대한 심사가 있습니다. 
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 신청인 채무에 대하여 보증을 선 사람이 있는데 그 보증인도 면책이 되는지?</a></h2>
-					<p class="collapsibleContent">
-						되지않습니다. 보증인은 보증채무를 이행해야 하고, 보증인도 면책이 되려면 개인회생 또는 파산면책을 별도로 진행해야 합니다. 
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 신청인 채무에 대한 보증을 선 사람도 채권자 목록에 포함이 되는지?</a></h2>
-					<p class="collapsibleContent">
-						보증인이 신청인 대신 변제하면 보증인은 신청인에 대하여 구상금채권자가 됩니다. 따라서	채권자 목록에 포함시켜야 합니다. 
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 소득신고가 되지않는 일용직인데 개인회생이 가능한지?</a></h2>
-					<p class="collapsibleContent">
-						가능합니다. 하지만 몇가지 준비사항이 있으며 개인회생개시결정 이후에는 인건비를 통장을 통해 받아야 합니다. 
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 급여가 압류되어 있는 상태인데 개인회생을 하면 압류가 다시 풀리는지?</a></h2>
-					<p class="collapsibleContent">
-						개인회생개시결정이 나면 중지명령의 효력이 중단되고, 개인회생인가결정이 되면 압류를 취소하면 됩니다.
-					</p>
-				</li>
-				<li class="collapsible">
-					<h2 class="collapsible_title"><a href="#">Q. 최근 발생한 채무가 있으면 개인회생을 할 수 없는지?</a></h2>
-					<p class="collapsibleContent">
-						매번 그렇지는 않습니다. 최근 발생한 채무의 금액, 사유, 사용처에 대한 소명을 해야하고 합리적인 이유가 있는 경우에는 상관없습니다. 
-					</p>
-				</li>
-				
-			</ul><!-- collapsibleWrap end -->
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 채무자의 채무액수 금액 제한이 있나요?</a></h2>
+						<p class="collapsibleContent">
+							상황마다 다를 수 있습니다. 왜냐하면 적은 금액은 벌어서 갚을 수 있다고 볼 수 있기 때문에 대부분 2천만원 이상의 경우	신청해왔습니다. 
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 소득의 액수가 어느 정도 있어야만 할 수 있나요?</a></h2>
+						<p class="collapsibleContent">
+							  개인회생 신청은 보건복지부 기준 최저생계비 이상의 소득이 있어야만 가능합니다. 보건복지부	기준 최저생계비보다 소득이 적은 분들은 개인회생절차는 진행이 어렵고 파산면책을 검토해야 합니다.  
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 최저 생계비를 소액 넘는 소득만 있어도 신청이 가능한가요?</a></h2>
+						<p class="collapsibleContent">
+							경우에 따라 조금씩 다르지만 대부분 가능합니다.  
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 성인이 된 자녀도 부양가족에 포함이 가능한가요?</a></h2>
+						<p class="collapsibleContent">
+							부양가족은 미성년 자녀에게만 해당이 되는 사항입니다. 하지만 성인의 자녀라고 해도 장애가 있거나 질병이 있어 가족의 보호 및 부양이 필요한 경우는 인정됩니다.
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 부모님도 부양가족에 포함이 가능한가요?</a></h2>
+						<p class="collapsibleContent">
+							만 60세 이상의 부모님은 부양가족으로 신청이 가능합니다. 하지만 60세 이상이라 해도 소득이 있으시거나 어느 정도의 재산을 보유하고 계시다면 부양가족에 포함시킬 수 없습니다.
+							단, 60세 미만의 부모님이라 하더라도 질병 또는 장애로 가족의 보호와 부양이 필요한 경우 부양가족으로 인정됩니다.
+							
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 배우자도 부양가족이 되나요?</a></h2>
+						<p class="collapsibleContent">
+							배우자는 경우에 따라 다르지만 미취학 아동이 있는 경우, 취업이 불가능한 사유를 소명할 수 있다면 부양가족으로 포함이 가능합니다.
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 배우자가 임대보증금이 있으면 개인회생이 불가능 하나요?</a></h2>
+						<p class="collapsibleContent">
+							직접적인 관련은 없습니다. 다만 배우자 임대보증금의 저반 액수와 채무자의 재산을 합한 금액보다 변제계획안의 총 변제액이 더 커야 합니다.  
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 채무액수의 한도는 있나요?</a></h2>
+						<p class="collapsibleContent">
+							담보채무액수는 10억원 이하인 경우에만 가능하고, 무담보채무액수는 5억원 이하인 경우만 가능합니다. 
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 주식투자 실패나 도박의 경우도 개인회생이 가능한가요?</a></h2>
+						<p class="collapsibleContent">
+							경우에 따라 다르지만 가능 할 수도 있습니다. 
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 부동산을 소유하고 있으면 개인회생을 할 수 없나요?</a></h2>
+						<p class="collapsibleContent">
+							가능하지만 개인회생 요건 검토가 사전에 필요합니다. 재산보다 빚이 많아야 하고 변제 계획안의 변제총액이 가지고 있는 재산보다 많아야 합니다. 구체적인 상담을 해봐야 개인회생 가능성에 대해 자세히 알아볼 수 있습니다. 
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 취직해서 월급을 받은지 1개월 밖에 되지 않아도 개인회생이 가능한지?</a></h2>
+						<p class="collapsibleContent">
+							가능하지만 계속하여 근무를 할 것인지에 대한 심사가 있습니다. 
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 신청인 채무에 대하여 보증을 선 보증인도 면책이 되나요?</a></h2>
+						<p class="collapsibleContent">
+							불가능합니다. 보증인은 보증채무를 이행해야 하고, 보증인도 면책이 되려면 개인회생 또는 파산면책을 별도로 진행해야 합니다. 
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 신청인 채무에 대한 보증을 선 사람도 채권자가 되나요?</a></h2>
+						<p class="collapsibleContent">
+							보증인이 신청인 대신 변제하면 보증인은 신청인에 대하여 구상금채권자가 됩니다. 따라서	채권자 목록에 포함시켜야 합니다. 
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 일용직인데 소득신고가 되지않습니다. 개인회생이 가능하나요?</a></h2>
+						<p class="collapsibleContent">
+							가능합니다. 하지만 몇가지 준비해야 할것이 있으며 개인회생개시결정 이후에는 인건비를 통장을 통해 받아야 합니다. 
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 급여가 압류되어 있는 상태입니다. 개인회생을 하면 압류가 풀리나요?</a></h2>
+						<p class="collapsibleContent">
+							개인회생개시결정이 나면 중지명령의 효력이 중단되고, 개인회생인가결정이 되면 압류를 취소하면 됩니다.
+						</p>
+					</li>
+					<li class="collapsible">
+						<h2 class="collapsible_title"><a href="#">Q. 최근 채무가 발생했다면 개인회생을 할 수 없나요?</a></h2>
+						<p class="collapsibleContent">
+							매번 그렇지는 않습니다. 최근 발생한 채무의 금액, 사유, 사용처에 대한 소명을 해야하고 합리적인 이유가 있는 경우에는 상관없습니다. 
+						</p>
+					</li>
+				</ul><!-- collapsibleWrap end -->
 			</div>
 		</div>
 	</section>
