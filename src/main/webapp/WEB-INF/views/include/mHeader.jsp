@@ -117,7 +117,7 @@
 		margin-bottom:10px;
 		font-size:20px;
 	}
-	.mCallInfoTitle:not(#callInfoTitle){
+	.mCallInfoTitle:not(#mCallInfoTitle){
 		margin-top:15px;
 	}
 	.mCallInfo > h3{
@@ -132,9 +132,16 @@
 		font-size:14px;
 		font-weight:500;
 	}
-	.mCallInfo > h5:last-child{
+	/* .mCallInfo > h5:last-child{
 		font-weight:600;
 		font-size:22px;
+	} */
+	.mCallInfo > .mCallInfoTitle:not(#mCallInfoTitle) ~ h5{
+		font-weight:500;
+		font-size:22px;
+	}
+	.mSmalltxt{
+		font-size:14px;
 	}
 	.blank{
 		display:inline-block;
@@ -243,8 +250,10 @@
 						<h3 class="secondChild">053-745-1332</h3>
 						<h5>Fax. 053-751-1696</h5>
 						<h5>E-mail. tc119@naver.com</h5>
-						<h4 class="mCallInfoTitle">운영시간</h4>
+						<h4 class="mCallInfoTitle">방문상담</h4>
 						<h5>AM 09:00<span class="blank"> ~ PM 06:00</span></h5>
+						<h4 class="mCallInfoTitle">전화상담<span class="mSmalltxt">&nbsp;(주말가능)</span></h4>
+						<h5>AM 09:00<span class="blank"> ~ PM 10:00</span></h5>
 					</div><!-- callInfo end -->
 				</div>
 			</div>
