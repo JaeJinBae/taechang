@@ -196,7 +196,7 @@
 					<hr>
 					<ul class="mainMenu">
 						<li>
-							<p>태창소개 <img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
+							<p>법무사소개 <img src="${pageContext.request.contextPath}/resources/images/ico_arr_nav_down_x2.png"></p>
 							<div class="subMenu">
 								<ul class="subNavUl">
 									<li><a href="${pageContext.request.contextPath}/menu01_1">- 인사말</a></li>
@@ -247,9 +247,9 @@
 					<div class="mCallInfo">
 						<h4 class="mCallInfoTitle" id="mCallInfoTitle">상담센터</h4>
 						<h3>1877 - 0757</h3>
-						<h3 class="secondChild">053-745-1332</h3>
-						<h5>Fax. 053-751-1696</h5>
-						<h5>E-mail. tc119@naver.com</h5>
+						<h3 class="secondChild">053-743-1333</h3>
+						<h5>Fax. 053-743-1190</h5>
+						<h5>E-mail. tc-law@nate.com</h5>
 						<h4 class="mCallInfoTitle">방문상담</h4>
 						<h5>AM 09:00<span class="blank"> ~ PM 06:00</span></h5>
 						<h4 class="mCallInfoTitle">전화상담<span class="mSmalltxt">&nbsp;(주말가능)</span></h4>

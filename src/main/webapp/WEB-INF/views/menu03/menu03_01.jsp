@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>개인파산이란 | 태창법무사사무소</title>
+<title>개인파산이란 | 김헌석법무사사무소</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/common.css?ver=4">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -400,8 +400,8 @@
 				<div class="callInfo">
 					<h4 class="callInfoTitle" id="callInfoTitle">상담센터</h4>
 					<h3>1877 - 0757</h3>
-					<h3 class="secondChild">053-745-1332</h3>
-					<h5>Fax. 053-751-1696</h5>
+					<h3 class="secondChild">053-743-1333</h3>
+					<h5>Fax. 053-743-1190</h5>
 					<h5>E-mail. tc119@naver.com</h5>
 					<h4 class="callInfoTitle">방문상담</h4>
 					<h5>AM 09:00<span class="blank"> ~ PM 06:00</span></h5>
@@ -414,7 +414,7 @@
 						<li>
 							<a href="#none">개인파산<img class="btnArrow" src="${pageContext.request.contextPath}/resources/images/down_arrow.png"></a>
 							<ul class="sub_subDropdown">
-								<li><a href="${pageContext.request.contextPath}/menu01_1">태창소개</a></li>
+								<li><a href="${pageContext.request.contextPath}/menu01_1">법무사소개</a></li>
 								<li><a href="${pageContext.request.contextPath}/menu02_1">개인회생</a></li>
 								<li><a href="${pageContext.request.contextPath}/menu04_1">민사</a></li>
 								<li><a href="${pageContext.request.contextPath}/menu05_1">자주하는질문</a></li>

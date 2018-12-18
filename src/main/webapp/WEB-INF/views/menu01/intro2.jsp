@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>운영방침 | 태창법무사사무소</title>
+<title>운영방침 | 김헌석법무사사무소</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/common.css?ver=4">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,7 +63,7 @@
 		text-align: center;
 	}
 	.navWrap .navUl > li:last-child{
-		width:45%;
+		width:42%;
 		text-align: left;
 	}
 	.navWrap .navUl > li a{  
@@ -82,7 +82,7 @@
 		margin-top:10px;
 	}
 	.navWrap .navUl > li a > .btnArrow{
-		margin-left:25px; 
+		margin-left:20px; 
 		margin-right:10px;
 		margin-top:14px;
 		float:right;
@@ -399,7 +399,7 @@
 		<div class="contentWrap">
 			<div class="sideMenuWrap">
 				<div class="sideMenu">
-					<h3>태창소개</h3>
+					<h3>법무사소개</h3>
 					<ul class="sideMenuUl"> 
 						<li><a href="${pageContext.request.contextPath}/menu01_1">인사말</a></li>
 						<li><a href="${pageContext.request.contextPath}/menu01_2">운영방침</a></li>
@@ -409,8 +409,8 @@
 			<div class="callInfo">
 					<h4 class="callInfoTitle" id="callInfoTitle">상담센터</h4>
 					<h3>1877 - 0757</h3>
-					<h3 class="secondChild">053-745-1332</h3>
-					<h5>Fax. 053-751-1696</h5>
+					<h3 class="secondChild">053-743-1333</h3>
+					<h5>Fax. 053-743-1190</h5>
 					<h5>E-mail. tc119@naver.com</h5>
 					<h4 class="callInfoTitle">방문상담</h4>
 					<h5>AM 09:00<span class="blank"> ~ PM 06:00</span></h5>
@@ -421,7 +421,7 @@
 					<ul class="navUl"> 
 						<li><a href="${pageContext.request.contextPath}/"><img class="btnHome" src="${pageContext.request.contextPath}/resources/images/home.png"></a></li>
 						<li>
-							<a href="#none">태창소개<img class="btnArrow" src="${pageContext.request.contextPath}/resources/images/down_arrow.png"></a>
+							<a href="#none">법무사소개<img class="btnArrow" src="${pageContext.request.contextPath}/resources/images/down_arrow.png"></a>
 							<ul class="sub_subDropdown">
 								<li><a href="${pageContext.request.contextPath}/menu02_1">개인회생</a></li>
 								<li><a href="${pageContext.request.contextPath}/menu03_1">개인파산</a></li>
@@ -441,7 +441,7 @@
 			</div><!-- sideMenuWrap end -->
 			<div class="content">
 				<img class="pcContent" src="${pageContext.request.contextPath}/resources/images/menu01_2contentImg.png">
-				<img class="tmContent" src="${pageContext.request.contextPath}/resources/images/tmMenu01_2contentImg.png">
+				<img class="tmContent" src="${pageContext.request.contextPath}/resources/images/tmMenu01_2contentImgTest.png">
 			</div>
 		</div>
 	</section>

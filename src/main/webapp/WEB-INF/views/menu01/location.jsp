@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>오시는 실 | 태창법무사사무소</title>
+<title>오시는 길 | 김헌석법무사사무소</title>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/common.css?ver=4">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a3d28e9c9d28c7930cf4fcc7be5bd5f8&libraries=drawing"></script>
@@ -64,7 +64,7 @@
 		text-align: center;
 	}
 	.navWrap .navUl > li:last-child{
-		width:45%;
+		width:42%;
 		text-align: left;
 	}
 	.navWrap .navUl > li a{  
@@ -83,7 +83,7 @@
 		margin-top:10px;
 	}
 	.navWrap .navUl > li a > .btnArrow{
-		margin-left:25px; 
+		margin-left:20px; 
 		margin-right:10px;
 		margin-top:14px;
 		float:right;
@@ -421,7 +421,7 @@
 		<div class="contentWrap">
 			<div class="sideMenuWrap">
 				<div class="sideMenu">
-					<h3>태창소개</h3>
+					<h3>법무사소개</h3>
 					<ul class="sideMenuUl"> 
 						<li><a href="${pageContext.request.contextPath}/menu01_1">인사말</a></li>
 						<li><a href="${pageContext.request.contextPath}/menu01_2">운영방침</a></li>
@@ -431,8 +431,8 @@
 				<div class="callInfo">
 					<h4 class="callInfoTitle" id="callInfoTitle">상담센터</h4>
 					<h3>1877 - 0757</h3>
-					<h3 class="secondChild">053-745-1332</h3>
-					<h5>Fax. 053-751-1696</h5>
+					<h3 class="secondChild">053-743-1333</h3>
+					<h5>Fax. 053-743-1190</h5>
 					<h5>E-mail. tc119@naver.com</h5>
 					<h4 class="callInfoTitle">방문상담</h4>
 					<h5>AM 09:00<span class="blank"> ~ PM 06:00</span></h5>
@@ -443,7 +443,7 @@
 					<ul class="navUl"> 
 						<li><a href="${pageContext.request.contextPath}/"><img class="btnHome" src="${pageContext.request.contextPath}/resources/images/home.png"></a></li>
 						<li>
-							<a href="#none">태창소개<img class="btnArrow" src="${pageContext.request.contextPath}/resources/images/down_arrow.png"></a>
+							<a href="#none">법무사소개<img class="btnArrow" src="${pageContext.request.contextPath}/resources/images/down_arrow.png"></a>
 							<ul class="sub_subDropdown">
 								<li><a href="${pageContext.request.contextPath}/menu02_1">개인회생</a></li>
 								<li><a href="${pageContext.request.contextPath}/menu03_1">개인파산</a></li>
@@ -468,14 +468,14 @@
 					<script>
 						var container = document.getElementById('map');
 						var options = {
-							center: new daum.maps.LatLng(35.862259, 128.626323),
+							center: new daum.maps.LatLng(35.862336, 128.627921),
 							level: 3
 						};
 				
 						var map = new daum.maps.Map(container, options);
 						
 						// 마커가 표시될 위치입니다 
-						var markerPosition  = new daum.maps.LatLng(35.862259, 128.626323); 
+						var markerPosition  = new daum.maps.LatLng(35.862336, 128.627921); 
 	
 						// 마커를 생성합니다
 						var marker = new daum.maps.Marker({
@@ -486,7 +486,7 @@
 						marker.setMap(map);
 						
 						// 마커에 커서가 오버됐을 때 마커 위에 표시할 인포윈도우를 생성합니다.
-						var iwContent = '<div style="padding-left:23px; padding-top:2px; color:#033c60; font-size:15px; font-weight:bold;">태창법무사사무소</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+						var iwContent = '<div style="padding-left:15px; padding-top:2px; color:#033c60; font-size:15px; font-weight:bold;">김헌석법무사사무소</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
 	
 						// 인포윈도우를 생성합니다
 						var infowindow = new daum.maps.InfoWindow({
@@ -518,7 +518,7 @@
 						});
 					</script>
 				</div>
-				<img src="${pageContext.request.contextPath}/resources/images/locationtest.png">
+				<img src="${pageContext.request.contextPath}/resources/images/location_test1.png">
 			</div>
 		</div>
 	</section>

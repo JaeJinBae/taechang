@@ -7,11 +7,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>개인회생파산전문 태창법무사</title>
+<title>개인회생파산전문 김헌석법무사</title>
 <meta name="naver-site-verification" content="d53046e7ecfe442e3b973c1baeb37ec7fc75031d"/>
 <meta name="description" content="대구 법원앞, 개인회생, 개인파산, 민사 등 무료 상담, 빠르고 높은 인가율! 책임관리!">
 <meta property="og:type" content="website">
-<meta property="og:title" content="개인회생파산전문 태창법무사">
+<meta property="og:title" content="개인회생파산전문 김헌석법무사">
 <meta property="og:description" content="대구 법원앞, 개인회생, 개인파산, 민사 등 무료 상담, 빠르고 높은 인가율! 책임관리!">
 <meta property="og:image" content="http://www.taechanglaw.com/logo.png">
 <meta property="og:url" content="http://www.taechanglaw.com">
@@ -550,21 +550,21 @@
 	</header>
 	<div class="mainSlider">
 		<div class="mainBanner pcMainBanner">
-			<div><img src="${pageContext.request.contextPath}/resources/images/mainSlider1.png" alt="태창법무사사무소"></div>
-			<div><img src="${pageContext.request.contextPath}/resources/images/mainSlider2.png" alt="태창법무사사무소"></div>
-			<div><img src="${pageContext.request.contextPath}/resources/images/mainSlider3.png" alt="태창법무사사무소"></div>
+			<div><img src="${pageContext.request.contextPath}/resources/images/mainSlider1.jpg" alt="김헌석법무사사무소"></div>
+			<div><img src="${pageContext.request.contextPath}/resources/images/mainSlider2.png" alt="김헌석법무사사무소"></div>
+			<div><img src="${pageContext.request.contextPath}/resources/images/mainSlider3.png" alt="김헌석법무사사무소"></div>
 		</div>
 		<div class="mainBanner tmMainBanner">
-			<div><img src="${pageContext.request.contextPath}/resources/images/tmMainSlider1.png" alt="태창법무사사무소"></div>
-			<div><img src="${pageContext.request.contextPath}/resources/images/tmMainSlider2.png" alt="태창법무사사무소"></div>
-			<div><img src="${pageContext.request.contextPath}/resources/images/tmMainSlider3.png" alt="태창법무사사무소"></div>
+			<div><img src="${pageContext.request.contextPath}/resources/images/tmMainSlider1.png" alt="김헌석법무사사무소"></div>
+			<div><img src="${pageContext.request.contextPath}/resources/images/tmMainSlider2.png" alt="김헌석법무사사무소"></div>
+			<div><img src="${pageContext.request.contextPath}/resources/images/tmMainSlider3.png" alt="김헌석법무사사무소"></div>
 		</div>
 	</div>
 	<section id="section1">
 		<div class="contentWrap1">
 			<div class="content01">
 				<div class="smallTitle">
-					<h2>태창법무사사무소</h2>
+					<h2>김헌석법무사사무소</h2>
 					<p>오랜 경력의 전문 법무사가 최상의 서비스를 제공합니다.</p>
 				</div>
 				<div class="boxWrap">
@@ -583,7 +583,7 @@
 								<h4>개인파산</h4>
 								<a href="${pageContext.request.contextPath}/menu03_1">더보기+</a>
 							</div>
-							<p>신뢰로 최선을 다하는 태창이 고객님을 지켜드리겠습니다.</p>
+							<p>신뢰로 최선을 다하는 김헌석이 고객님을 지켜드리겠습니다.</p>
 						</div>
 					</div> 
 					<div class="mainInfo info03">
@@ -592,7 +592,7 @@
 								<h4>민사소송</h4>
 								<a href="${pageContext.request.contextPath}/menu04_1">더보기+</a>
 							</div>
-							<p>다루고자하는 권리의무관계에 대하여 법원의 판단을 구하는 절차 태창이 돕겠습니다.</p>
+							<p>다루고자하는 권리의무관계에 대하여 법원의 판단을 구하는 절차 김헌석이 돕겠습니다.</p>
 						</div>
 					</div>
 				</div><!-- boxWrap end -->
@@ -607,7 +607,7 @@
 				</div>
 				<div class="section2Content_content">
 					<a href="${pageContext.request.contextPath}/menu01_1">
-						<img src="${pageContext.request.contextPath}/resources/images/mainContentBoxImg1.png">
+						<img src="${pageContext.request.contextPath}/resources/images/mainContentBoxImg1.jpg">
 					</a>
 				</div>
 			</div>
@@ -617,7 +617,7 @@
 				</div>
 				<div class="section2Content_content">
 					<a href="${pageContext.request.contextPath}/menu01_2">
-						<img src="${pageContext.request.contextPath}/resources/images/mainContentBoxImg2.png">
+						<img src="${pageContext.request.contextPath}/resources/images/mainContentBoxImg2.jpg">
 					</a>
 				</div>
 			</div>
@@ -627,7 +627,7 @@
 				</div>
 				<div class="section2Content_content">
 					<img class="pcTimeImg" src="${pageContext.request.contextPath}/resources/images/mainContentBoxImg3.png">
-					<img class="mTimeImg" src="${pageContext.request.contextPath}/resources/images/timeTest.png">
+					<img class="mTimeImg" src="${pageContext.request.contextPath}/resources/images/timeTest2.png">
 				</div>
 			</div>
 			<div class="contentBox4 contentBox">
@@ -659,14 +659,14 @@
 				<script>
 					var container = document.getElementById('map');
 					var options = {
-						center: new daum.maps.LatLng(35.862259, 128.626323),
+						center: new daum.maps.LatLng(35.862336, 128.627921),
 						level: 3
 					};
 			
 					var map = new daum.maps.Map(container, options);
 					
 					// 마커가 표시될 위치입니다 
-					var markerPosition  = new daum.maps.LatLng(35.862259, 128.626323); 
+					var markerPosition  = new daum.maps.LatLng(35.862336, 128.627921); 
 
 					// 마커를 생성합니다
 					var marker = new daum.maps.Marker({
@@ -677,7 +677,7 @@
 					marker.setMap(map);
 					
 					// 마커에 커서가 오버됐을 때 마커 위에 표시할 인포윈도우를 생성합니다.
-					var iwContent = '<div style="padding-left:23px; padding-top:2px; color:#033c60; font-size:15px; font-weight:bold;">태창법무사사무소</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+					var iwContent = '<div style="padding-left:15px; padding-top:2px; color:#033c60; font-size:15px; font-weight:bold;">김헌석법무사사무소</div>'; // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
 
 					// 인포윈도우를 생성합니다
 					var infowindow = new daum.maps.InfoWindow({

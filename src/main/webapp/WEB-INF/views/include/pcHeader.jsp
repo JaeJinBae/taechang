@@ -95,6 +95,7 @@
 	}
 	.subMenuCallInfo > p:nth-child(2){
 		margin-bottom:10px;
+		letter-spacing: -1px;		
 	}
 	.subMenuCallInfo > h1{
 		font-weight: bold;
@@ -164,11 +165,11 @@
 		text-align: left;
 		margin-bottom:23px;
 	}
-	.logoWrap > a{
+	.logoWrap > .logoDiv > a{
 		display:block;
 		width:300px;
 	}
-	.logoWrap > a > img{
+	.logoWrap > .logoDiv > a > img{
 		width:100%;
 	}
 	.mainMenuUl > li:hover > a{
@@ -252,14 +253,14 @@
 					<div class="subMenuWrap">
 						<div class="subMenuCallInfo">
 						<p>개인회생/개인파산/민사 똑같다고 생각 마세요.</p>
-						<p>여러분의 최고 파트너 <span id="bigtxt">태창</span>의 문을 두드리세요.</p>
+						<p>여러분의 최고 파트너 <span id="bigtxt">김헌석</span>의 문을 두드리세요.</p>
 						<h1>1877-0757</h1>
-						<h1>053-745-1332</h1>
+						<h1>053-743-1333</h1>
 					</div><!-- subMenuCallInfo -->
 					</div>
 				</li>
 				<li>
-					<a class="mMenu" href="#none">태창소개</a>
+					<a class="mMenu" href="#none">법무사소개</a>
 					<div class="subMenuWrap">
 						<ul class="subMenuUl">
 							<li><a href="${pageContext.request.contextPath}/menu01_1">인사말</a></li>
