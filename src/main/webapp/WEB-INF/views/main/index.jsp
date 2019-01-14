@@ -13,9 +13,9 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="개인회생파산전문 김헌석법무사">
 <meta property="og:description" content="대구 법원앞, 개인회생, 개인파산, 민사 등 무료 상담, 빠르고 높은 인가율! 책임관리!">
-<meta property="og:image" content="http://www.taechanglaw.com/logo.png">
-<meta property="og:url" content="http://www.taechanglaw.com">
-<link rel="canonical" href="http://www.taechanglaw.com/">
+<meta property="og:image" content="http://www.119-law.com/logo.png">
+<meta property="og:url" content="http://www.119-law.com">
+<link rel="canonical" href="http://www.119-law.com/">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/common.css?ver=4">
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick.css"/>
 <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/slick/slick-theme.css?ver=0"/>
