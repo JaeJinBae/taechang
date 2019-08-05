@@ -246,7 +246,7 @@
 					</ul>
 					<div class="mCallInfo">
 						<h4 class="mCallInfoTitle" id="mCallInfoTitle">상담센터</h4>
-						<h3>1877 - 0879</h3>
+						<h3>1877 - 0757</h3>
 						<h3 class="secondChild">053-743-1333</h3>
 						<h5>Fax. 053-743-1190</h5>
 						<h5>E-mail. tc-law@nate.com</h5>

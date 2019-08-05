@@ -254,7 +254,7 @@
 						<div class="subMenuCallInfo">
 						<p>개인회생/개인파산/민사 똑같다고 생각 마세요.</p>
 						<p>여러분의 최고 파트너 <span id="bigtxt">김헌석</span>의 문을 두드리세요.</p>
-						<h1>1877-0879</h1>
+						<h1>1877-0757</h1>
 						<h1>053-743-1333</h1>
 					</div><!-- subMenuCallInfo -->
 					</div>
