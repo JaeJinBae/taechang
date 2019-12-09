@@ -428,17 +428,7 @@
 						<li><a href="${pageContext.request.contextPath}/menu01_3">오시는 길</a></li>
 					</ul>
 				</div><!-- sideMenu end -->
-				<div class="callInfo">
-					<h4 class="callInfoTitle" id="callInfoTitle">상담센터</h4>
-					<h3>1877 - 0757</h3>
-					<h3 class="secondChild">053-743-1333</h3>
-					<h5>Fax. 053-743-1190</h5>
-					<h5>E-mail. tc119@naver.com</h5>
-					<h4 class="callInfoTitle">방문상담</h4>
-					<h5>AM 09:00<span class="blank"> ~ PM 06:00</span></h5>
-					<h4 class="callInfoTitle">전화상담<span class="smalltxt">&nbsp;(주말가능)</span></h4>
-					<h5>AM 09:00<span class="blank"> ~ PM 10:00</span></h5>
-				</div><!-- callInfo end -->
+				<jsp:include page="../include/leftMenu_info.jsp"></jsp:include><!-- callInfo end -->
 				<div class="navWrap">
 					<ul class="navUl"> 
 						<li><a href="${pageContext.request.contextPath}/"><img class="btnHome" src="${pageContext.request.contextPath}/resources/images/home.png"></a></li>
